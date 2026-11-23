@@ -577,7 +577,7 @@ html[lang=en] .share p{font-size:24px;line-height:1.3}
       .replace(/ؤ/g, 'و').replace(/ئ/g, 'ي').replace(/[^؀-ۿa-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
   }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]; }); }
-  var GEN = {eau: 1, de: 1, du: 1, parfum: 1, toilette: 1, le: 1, la: 1, l: 1, les: 1, pour: 1, homme: 1, femme: 1, the: 1, by: 1, extrait: 1, cologne: 1, intense: 1};
+  var GEN = {absolu: 1, absolue: 1, eau: 1, de: 1, du: 1, parfum: 1, toilette: 1, le: 1, la: 1, l: 1, les: 1, pour: 1, homme: 1, femme: 1, the: 1, by: 1, extrait: 1, cologne: 1, intense: 1};
   function baseKey(x) { var w = nz(x.en).split(' ').filter(function (q) { return q && !GEN[q]; }); return x.ben + '|' + (w[0] || x.pid); }
   function short(name) { return String(name || '').replace(/^(عطر|طقم)\s+/, '').replace(/\s+-\s+.*$/, ''); }
   function num(n) { return Number(n).toLocaleString('en'); }
