@@ -1,0 +1,1298 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>اكتشف عطرك القادم | باريس أفنيوز</title>
+<meta name="theme-color" content="#732D69">
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","yvldr90dra");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#732D69;--berry:#A7246C;--rose:#c25a8f;--gold:#c8a46a;--gold2:#e6cf9f;
+  --ink:#1f1522;--mute:#7b6f7e;--line:rgba(115,45,105,.13);--cream:#fbf7f4;--blush:#f7ecf2;--blush2:#fdf6f9;
+  --ok:#1f8a4c;--bad:#b42d3c;--sh:0 10px 30px -12px rgba(115,45,105,.28);--sh2:0 2px 10px rgba(31,21,34,.06);
+  --ease:cubic-bezier(.22,1,.36,1);--font:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;--display:var(--font)
+}
+html[lang=en]{--font:"IBM Plex Sans","Segoe UI",sans-serif;--display:"Cormorant Garamond",Georgia,serif}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html,body{margin:0;min-height:100%}
+body{background:var(--cream);color:var(--ink);font:16px/1.7 var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+button,input{font:inherit;color:inherit}button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+a{color:var(--berry)}
+svg.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+html[dir=ltr] svg.flip{transform:scaleX(-1)}
+
+/* الخلفية: ضباب متحرك وذرّات ذهبية */
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bg i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;animation:drift 22s ease-in-out infinite alternate}
+.bg i:nth-child(1){width:46vmax;height:46vmax;background:#efd3e2;top:-18vmax;left:-12vmax}
+.bg i:nth-child(2){width:38vmax;height:38vmax;background:#f3e2cf;bottom:-16vmax;right:-10vmax;animation-delay:-7s}
+.bg i:nth-child(3){width:28vmax;height:28vmax;background:#e7d6ee;top:38%;left:40%;animation-delay:-13s;opacity:.35}
+.bg b{position:absolute;bottom:-10px;width:5px;height:5px;border-radius:50%;background:var(--gold);opacity:0;animation:rise-dot 14s linear infinite;box-shadow:0 0 8px var(--gold2)}
+@keyframes drift{to{transform:translate(6vmax,4vmax) scale(1.12)}}
+@keyframes rise-dot{0%{transform:translateY(0) scale(.6);opacity:0}12%{opacity:.55}100%{transform:translateY(-105vh) scale(1);opacity:0}}
+
+/* الترويسة */
+.hd{position:sticky;top:0;z-index:20;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:10px 16px;background:rgba(251,247,244,.8);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hd img{height:36px;display:block}
+.hd .store{display:flex;align-items:center;gap:6px;text-decoration:none;color:var(--plum);font-size:14px;font-weight:500}
+.hd .store svg{width:18px;height:18px}
+.lang{justify-self:end;display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:99px;padding:5px 12px;font-size:13px;font-weight:600;color:var(--plum);transition:.2s}
+.lang:hover{border-color:var(--berry)}.lang svg{width:16px;height:16px}
+
+/* التخطيط */
+.layout{max-width:1200px;margin:0 auto;padding:18px 16px 40px;display:grid;gap:28px}
+.stage{min-width:0}
+.show{display:none}
+@media (min-width:980px){
+  .layout{grid-template-columns:minmax(0,1fr) 430px;padding:28px 28px 56px;align-items:start}
+  .show{display:block;position:sticky;top:86px;height:calc(100vh - 120px);min-height:560px;border-radius:32px;overflow:hidden;color:#fff;
+        background:radial-gradient(120% 90% at 85% 0%,#c25a8f 0%,rgba(194,90,143,0) 55%),linear-gradient(165deg,#5e2357 0%,#732D69 45%,#A7246C 100%);box-shadow:var(--sh)}
+  .stage{max-width:620px;width:100%;justify-self:center}
+  .is-results .stage{max-width:none}
+  .is-results .layout{grid-template-columns:minmax(0,1fr) 360px}
+  .m-only{display:none!important}
+}
+
+/* لوحة العرض */
+.show .glow{position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.22),rgba(255,255,255,0) 65%);top:8%;left:50%;transform:translateX(-50%);animation:breathe 7s ease-in-out infinite}
+@keyframes breathe{50%{transform:translateX(-50%) scale(1.12);opacity:.7}}
+.show .in{position:relative;height:100%;display:flex;flex-direction:column;padding:34px 34px 30px}
+.show .kick{font-size:12px;letter-spacing:1.5px;opacity:.75;text-transform:uppercase}
+.show h3{font:600 27px/1.4 var(--display);margin:6px 0 0}
+html[lang=en] .show h3{font-size:32px;line-height:1.15}
+.show .lead{opacity:.82;font-size:14px;margin-top:4px}
+.show .sum{margin-top:auto}
+.show .sum b{display:block;font-size:12.5px;font-weight:500;opacity:.75;margin-bottom:8px}
+.show .tags{display:flex;flex-wrap:wrap;gap:7px}
+.show .tags span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:99px;padding:4px 12px;font-size:13.5px;animation:pop .45s var(--ease) both}
+.show .bars{margin-top:14px}.show .bars .t{display:flex;align-items:center;gap:10px;font-size:13.5px;margin-top:6px}
+.show .bars .t span{flex:0 0 140px}.show .bars .t i{display:block;height:6px;border-radius:9px;background:linear-gradient(90deg,#fff,var(--gold2));transition:width .5s var(--ease)}
+
+/* مروحة القوارير */
+.fan{position:relative;height:290px;margin:22px 0 8px;direction:ltr}
+.fan figure{position:absolute;top:30px;left:50%;width:136px;height:186px;margin:0 0 0 -68px;border-radius:22px;background:#fff;box-shadow:0 18px 40px -16px rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;
+  transform:translateX(calc(var(--x) * 1px)) translateY(calc(var(--y) * 1px)) rotate(calc(var(--r) * 1deg));animation:bob 6s ease-in-out infinite;animation-delay:calc(var(--d) * -1s);transition:transform .6s var(--ease)}
+.fan figure img{width:82%;height:82%;object-fit:contain}
+.fan:hover figure{transform:translateX(calc(var(--x) * 1.25px)) translateY(calc(var(--y) * 1px - 6px)) rotate(calc(var(--r) * 1.3deg))}
+@keyframes bob{50%{translate:0 -10px}}
+.hero{position:relative}
+.hero::before{content:"";position:absolute;inset:10% 15% 20%;background:radial-gradient(circle,rgba(167,36,108,.18),transparent 70%);filter:blur(20px)}
+.hero .fan{height:210px;margin:0 -10px;transform:scale(.84);transform-origin:50% 30%}
+.hero .fan figure{width:112px;height:152px;margin-left:-56px;top:18px}
+
+/* التقدّم */
+.nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.back{display:flex;align-items:center;gap:4px;border:0;background:none;color:var(--plum);padding:6px 2px;font-size:14.5px;font-weight:500}
+.back svg{width:18px;height:18px}
+.step{font-size:13px;color:var(--mute)}
+.prog{position:relative;height:4px;border-radius:9px;background:rgba(115,45,105,.1);margin-bottom:22px}
+.prog i{position:relative;display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,var(--plum),var(--berry));transition:width .6s var(--ease)}
+html[dir=rtl] .prog i{background:linear-gradient(270deg,var(--plum),var(--berry))}
+.prog i::after{content:"";position:absolute;inset-inline-end:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:var(--gold2);box-shadow:0 0 0 4px rgba(200,164,106,.25),0 0 12px var(--gold)}
+
+/* الدخول */
+.q{animation:in .55s var(--ease) both}
+.q .st{animation:in .5s var(--ease) both;animation-delay:calc(var(--i,0) * 50ms + 80ms)}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--plum);background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:99px;padding:3px 12px;letter-spacing:.3px}
+.kicker svg{width:15px;height:15px;color:var(--gold)}
+html[lang=en] .kicker{text-transform:uppercase;letter-spacing:1.2px;font-size:11.5px}
+h1{font:700 clamp(32px,8vw,50px)/1.25 var(--display);margin:12px 0 10px;letter-spacing:-.3px;
+   background:linear-gradient(110deg,var(--plum) 0%,var(--berry) 40%,var(--gold) 50%,var(--berry) 60%,var(--plum) 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s ease-in-out infinite}
+@keyframes shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+html[lang=en] h1{font-size:clamp(40px,9vw,62px);line-height:1.05;letter-spacing:0;font-weight:600}
+h2{font:600 clamp(22px,5.4vw,28px)/1.45 var(--display);margin:0 0 6px}
+html[lang=en] h2{font-size:clamp(28px,6vw,36px);line-height:1.15}
+.sub{color:var(--mute);margin:0 0 20px;font-size:15px}
+
+/* بطاقات البداية */
+.cta{position:relative;overflow:hidden;display:flex;align-items:center;gap:16px;width:100%;text-align:start;border:1px solid var(--line);background:rgba(255,255,255,.82);backdrop-filter:blur(8px);border-radius:24px;padding:18px;margin:12px 0;box-shadow:var(--sh2);transition:transform .25s var(--ease),box-shadow .25s}
+.cta:hover{transform:translateY(-3px);box-shadow:var(--sh)}.cta:active{transform:scale(.985)}
+.cta::after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-18deg);transition:left .7s var(--ease)}
+.cta:hover::after{left:120%}
+.cta .ic{width:54px;height:54px;border-radius:18px;display:grid;place-items:center;background:var(--blush);color:var(--plum);flex:0 0 auto}
+.cta .ic svg{width:26px;height:26px}
+.cta b{display:block;font-size:18px;font-weight:600}.cta span{display:block;color:var(--mute);font-size:14px;line-height:1.5}
+.cta .go-ar{margin-inline-start:auto;color:var(--berry)}
+.cta.main{background:linear-gradient(135deg,var(--plum),var(--berry));border-color:transparent;color:#fff;box-shadow:var(--sh)}
+.cta.main .ic{background:rgba(255,255,255,.16);color:#fff}.cta.main span{color:rgba(255,255,255,.84)}.cta.main .go-ar{color:#fff}
+.cta.gift{background:linear-gradient(135deg,#fffaf2,#fff);border-color:rgba(200,164,106,.45)}
+.cta.gift .ic{background:linear-gradient(140deg,#f6e7c9,#fff3dd);color:#9a7432}.cta.gift .go-ar{color:#9a7432}
+
+/* الخيارات */
+.opts{display:grid;gap:10px}
+@media (min-width:640px){.opts.two{grid-template-columns:1fr 1fr}}
+.opt{position:relative;overflow:hidden;display:flex;align-items:center;gap:14px;text-align:start;border:1px solid var(--line);background:rgba(255,255,255,.84);border-radius:18px;padding:14px 16px;box-shadow:var(--sh2);transition:transform .2s var(--ease),border-color .2s,background .2s,box-shadow .2s}
+.opt:hover{transform:translateY(-2px);box-shadow:var(--sh)}.opt:active{transform:scale(.985)}
+.opt .ic{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:var(--blush);color:var(--plum);transition:.25s var(--ease);flex:0 0 auto}
+.opt b{display:block;font-weight:600;font-size:16px;line-height:1.45}.opt small{display:block;color:var(--mute);font-size:13px;line-height:1.45}
+.opt .ck{margin-inline-start:auto;width:24px;height:24px;border-radius:50%;border:1.5px solid rgba(115,45,105,.25);display:grid;place-items:center;color:#fff;transition:.2s;flex:0 0 auto}
+.opt .ck svg{width:14px;height:14px;stroke-width:2.4;opacity:0;transform:scale(.4);transition:.25s var(--ease)}
+.opt.on{border-color:var(--berry);background:#fff;box-shadow:0 0 0 3px rgba(167,36,108,.1)}
+.opt.on .ic{background:linear-gradient(140deg,var(--plum),var(--berry));color:#fff;transform:rotate(-6deg) scale(1.05)}.opt.on .ck{background:var(--berry);border-color:var(--berry)}.opt.on .ck svg{opacity:1;transform:none}
+.ripple{position:absolute;border-radius:50%;background:rgba(167,36,108,.16);transform:scale(0);animation:ripple .6s ease-out forwards;pointer-events:none}
+@keyframes ripple{to{transform:scale(4);opacity:0}}
+
+/* بطاقات الروائح */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.card{position:relative;overflow:hidden;border:1px solid var(--line);background:rgba(255,255,255,.84);border-radius:20px;padding:16px 8px 13px;text-align:center;box-shadow:var(--sh2);transition:transform .2s var(--ease),border-color .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--sh)}
+.card:hover .ic{transform:translateY(-2px) rotate(-8deg)}
+.card .ic{width:54px;height:54px;margin:0 auto 8px;border-radius:50%;display:grid;place-items:center;color:var(--plum);background:linear-gradient(140deg,var(--blush),#fff);border:1px solid var(--line);transition:.3s var(--ease)}
+.card .ic svg{width:27px;height:27px}
+.card b{display:block;font-size:14.5px;font-weight:600;line-height:1.4}.card small{display:block;color:var(--mute);font-size:12px;line-height:1.4;margin-top:2px}
+.card .mk{position:absolute;top:8px;inset-inline-start:8px;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;color:#fff;opacity:0;transform:scale(.4);transition:.25s var(--ease)}
+.card .mk svg{width:13px;height:13px;stroke-width:2.6}
+.card.on{border-color:var(--berry);box-shadow:0 0 0 3px rgba(167,36,108,.1)}.card.on .ic{background:linear-gradient(140deg,var(--plum),var(--berry));color:#fff;transform:scale(1.08)}
+.card.on .mk{opacity:1;transform:none;background:var(--berry)}
+.card.no{border-color:var(--bad);box-shadow:0 0 0 3px rgba(180,45,60,.09)}.card.no .ic{background:#fbe9eb;color:var(--bad)}.card.no .mk{opacity:1;transform:none;background:var(--bad)}
+@media (max-width:370px){.cards{grid-template-columns:repeat(2,1fr)}}
+
+/* الأزرار */
+.go{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:20px;border:0;border-radius:18px;background:linear-gradient(135deg,var(--plum),var(--berry));color:#fff;font-weight:600;padding:16px;font-size:17px;box-shadow:var(--sh);transition:transform .2s var(--ease),opacity .2s}
+.go:active{transform:scale(.985)}.go:disabled{opacity:.35;box-shadow:none;cursor:default}
+.go svg{width:20px;height:20px}
+.skip{display:block;margin:12px auto 0;border:0;background:none;color:var(--mute);text-decoration:underline;text-underline-offset:4px;font-size:14px}
+
+/* البحث */
+.sbox{position:relative}
+.sbox svg{position:absolute;top:50%;inset-inline-start:16px;transform:translateY(-50%);color:var(--plum);opacity:.7}
+.sbox input{width:100%;border:1px solid var(--line);border-radius:18px;padding:16px;padding-inline-start:50px;font-size:16.5px;background:#fff;box-shadow:var(--sh2);transition:.2s}
+.sbox input:focus{outline:none;border-color:var(--berry);box-shadow:0 0 0 4px rgba(167,36,108,.1)}
+.res{background:#fff;border:1px solid var(--line);border-radius:18px;margin-top:8px;overflow:hidden;box-shadow:var(--sh);animation:in .3s var(--ease) both}
+.hit{display:flex;gap:12px;align-items:center;width:100%;border:0;border-bottom:1px solid var(--line);background:#fff;padding:9px 12px;text-align:start;transition:background .15s}
+.hit:last-child{border-bottom:0}.hit:hover{background:var(--blush2)}
+.hit img,.hit .ph{width:46px;height:46px;object-fit:contain;flex:0 0 46px;border-radius:10px;background:var(--blush2)}
+.hit .ph{display:grid;place-items:center;color:rgba(115,45,105,.45)}
+.hit b{display:block;font-size:14.5px;font-weight:500;line-height:1.45}.hit small{color:var(--mute);font-size:12px}
+.badge{display:inline-block;background:#e6f4ec;color:var(--ok);border-radius:99px;font-size:11px;font-weight:600;padding:1px 8px;margin-inline-start:6px;vertical-align:middle}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.chip{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--berry);border-radius:99px;padding:4px 6px;padding-inline-start:14px;font-size:14px;animation:pop .35s var(--ease) both}
+.chip button{border:0;background:var(--blush);border-radius:50%;width:24px;height:24px;display:grid;place-items:center;padding:0;color:var(--plum)}
+.chip button svg{width:13px;height:13px;stroke-width:2.2}
+.empty{padding:14px;color:var(--mute);font-size:14px}
+.note{display:flex;gap:10px;align-items:flex-start;background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:16px;padding:12px 14px;font-size:14px;margin:12px 0;line-height:1.6}
+.note svg{width:19px;height:19px;color:var(--plum);margin-top:2px}
+.note.ok{border-color:#bfe3cc;background:#f3fbf6}.note.ok svg{color:var(--ok)}
+
+/* التجهيز */
+.loading{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:52vh;text-align:center;color:var(--plum)}
+.rings{position:relative;width:110px;height:110px;margin-bottom:20px}
+.rings i{position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--berry);animation:ring 1.8s var(--ease) infinite;opacity:0}
+.rings i:nth-child(2){animation-delay:.45s;border-color:var(--gold)}.rings i:nth-child(3){animation-delay:.9s}
+.rings svg{position:absolute;inset:34px;width:42px;height:42px;animation:spray 1.8s ease-in-out infinite}
+@keyframes ring{0%{transform:scale(.35);opacity:.9}100%{transform:scale(1.2);opacity:0}}
+@keyframes spray{50%{transform:translateY(-4px) rotate(-6deg)}}
+.loading p{margin:0;font-weight:600;font-size:17px}.loading small{color:var(--mute)}
+
+/* النتائج */
+.rhead .tags{display:flex;flex-wrap:wrap;gap:6px;margin:2px 0 6px}
+.rhead .tags span{background:#fff;border:1px solid var(--line);border-radius:99px;padding:2px 11px;font-size:12.5px;color:var(--plum)}
+.grid{display:grid;gap:16px;margin-top:14px}
+@media (min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
+.pc{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--sh2);animation:rise .7s var(--ease) both;animation-delay:calc(var(--i) * 120ms);transition:transform .3s var(--ease),box-shadow .3s}
+.pc:hover{box-shadow:var(--sh)}
+@keyframes rise{from{opacity:0;transform:translateY(30px) scale(.96)}to{opacity:1;transform:none}}
+.pc.out{animation:out .3s var(--ease) both}@keyframes out{to{opacity:0;transform:scale(.9) rotate(-2deg)}}
+.pc.top{border-color:rgba(200,164,106,.55);box-shadow:0 0 0 3px rgba(200,164,106,.14),var(--sh2)}
+.pc .img{position:relative;height:210px;display:grid;place-items:center;background:radial-gradient(70% 70% at 50% 55%,#fff 0%,var(--blush) 100%);overflow:hidden}
+.pc .img img{max-width:72%;max-height:180px;object-fit:contain;transition:transform .5s var(--ease)}
+.pc:hover .img img{transform:scale(1.06) rotate(-2deg)}
+.pc .rib{position:absolute;top:12px;inset-inline-start:12px;display:flex;align-items:center;gap:5px;background:linear-gradient(135deg,#b48a45,var(--gold),#d9bd86);color:#fff;font-size:12px;font-weight:600;border-radius:99px;padding:3px 12px;z-index:1;box-shadow:0 4px 12px -4px rgba(154,116,50,.6)}
+.pc .rib svg{width:13px;height:13px}
+.spark{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--gold);pointer-events:none;z-index:2;animation:burst .9s var(--ease) forwards;box-shadow:0 0 6px var(--gold2)}
+@keyframes burst{0%{transform:translate(0,0) scale(1);opacity:1}100%{transform:translate(var(--dx),var(--dy)) scale(.2);opacity:0}}
+.pc .bd{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.pc .br{color:var(--mute);font-size:12.5px;letter-spacing:.3px}
+.pc h3{margin:2px 0 4px;font-size:17px;line-height:1.45;font-weight:600}
+.price{font-weight:700;color:var(--plum);font-size:16px}.price s{color:var(--mute);font-weight:400;font-size:13px;margin-inline-start:6px}
+.why{margin:10px 0 0;padding:0;list-style:none;font-size:13.5px;line-height:1.55}
+.why li{display:flex;gap:7px;margin:5px 0}.why li svg{width:16px;height:16px;color:var(--berry);margin-top:3px;stroke-width:2.2}
+.acc{display:flex;flex-wrap:wrap;gap:5px;margin:10px 0 14px}
+.acc span{background:var(--blush2);border:1px solid var(--line);border-radius:99px;padding:1px 9px;font-size:12px;color:var(--plum)}
+.pc .act{display:flex;flex-direction:column;gap:6px;margin-top:auto}
+.btn{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;border-radius:14px;padding:11px;background:linear-gradient(135deg,var(--plum),var(--berry));color:#fff;text-decoration:none;font-weight:600;font-size:15px;transition:filter .2s}
+.btn:hover{filter:brightness(1.08)}
+.nope{display:flex;align-items:center;justify-content:center;gap:5px;border:1px solid var(--line);background:#fff;border-radius:14px;padding:8px 12px;font-size:13.5px;color:var(--mute);transition:.2s;white-space:nowrap}
+.nope:hover{color:var(--bad);border-color:rgba(180,45,60,.35)}.nope svg{width:17px;height:17px}
+.more{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.more button{display:flex;align-items:center;gap:7px;border:1px solid var(--line);color:var(--plum);background:rgba(255,255,255,.86);border-radius:99px;padding:9px 16px;font-weight:500;font-size:14px;box-shadow:var(--sh2);transition:.2s}
+.more button:hover{border-color:var(--berry);transform:translateY(-1px)}.more button svg{width:17px;height:17px}
+.share{position:relative;overflow:hidden;background:linear-gradient(135deg,#5e2357,var(--plum) 45%,var(--berry));color:#fff;border-radius:26px;padding:22px;margin-top:26px;box-shadow:var(--sh)}
+.share::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.18),transparent 65%);top:-120px;inset-inline-end:-80px;animation:breathe2 6s ease-in-out infinite}
+@keyframes breathe2{50%{transform:scale(1.2)}}
+.share b{display:block;font-size:12.5px;opacity:.8;font-weight:500}.share p{margin:6px 0 14px;font:500 19px/1.6 var(--display)}
+html[lang=en] .share p{font-size:24px;line-height:1.3}
+.share a{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--plum);border-radius:99px;padding:9px 18px;font-weight:600;text-decoration:none;font-size:14px}
+.share a svg{width:18px;height:18px}
+.sets h4{margin:26px 0 0;font-size:17px;font-weight:600}
+.foot{color:var(--mute);font-size:12px;text-align:center;margin-top:28px}
+
+/* السوايب — الاتجاه ثابت في اللغتين: اليمين = أعجبني */
+.deck{position:relative;height:min(470px,56vh);min-height:400px;margin:8px auto 14px;max-width:380px}
+.deck .ghost{position:absolute;inset:0;border-radius:28px;background:#fff;border:1px solid var(--line);box-shadow:var(--sh2)}
+.deck .ghost.g1{transform:translateY(16px) scale(.94);opacity:.7}.deck .ghost.g2{transform:translateY(30px) scale(.88);opacity:.4}
+.sc{position:absolute;inset:0;background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;display:flex;flex-direction:column;touch-action:none;user-select:none;cursor:grab;
+    box-shadow:0 20px 50px -20px rgba(115,45,105,.45),0 0 0 4px var(--glow,transparent);transition:transform .35s var(--ease),opacity .35s,box-shadow .2s;animation:deal .45s var(--ease) both}
+@keyframes deal{from{opacity:0;transform:translateY(22px) scale(.96)}to{opacity:1;transform:none}}
+.sc.drag{transition:box-shadow .2s;cursor:grabbing}
+.sc .img{height:58%;display:grid;place-items:center;background:radial-gradient(70% 70% at 50% 55%,#fff 0%,var(--blush) 100%);position:relative}
+.sc .img img{max-width:70%;max-height:88%;object-fit:contain;pointer-events:none}
+.sc .bd{padding:14px 18px;text-align:center}
+.sc .br{color:var(--mute);font-size:13px}.sc h3{margin:2px 0 8px;font-size:20px;line-height:1.4;font-weight:600}
+.sc .fam{display:inline-flex;align-items:center;gap:7px;color:var(--plum);font-weight:600;font-size:14.5px}
+.sc .fam svg{width:20px;height:20px}
+.sc .acc{justify-content:center;margin:8px 0 0}
+.sc .tag{position:absolute;top:22px;z-index:2;font-weight:700;font-size:19px;border:2.5px solid;border-radius:12px;padding:2px 12px;opacity:0;background:rgba(255,255,255,.88)}
+.sc .tag.yes{left:18px;color:var(--ok);transform:rotate(-10deg)}.sc .tag.no{right:18px;color:var(--bad);transform:rotate(10deg)}
+.sc .stock{position:absolute;top:14px;z-index:1;right:14px}
+.sbtns{display:flex;justify-content:center;align-items:center;gap:20px;direction:ltr}
+.sbtns button{border:1px solid var(--line);background:#fff;border-radius:99px;box-shadow:var(--sh2);display:grid;place-items:center;transition:transform .2s var(--ease),box-shadow .2s}
+.sbtns button:hover{transform:translateY(-2px);box-shadow:var(--sh)}.sbtns button:active{transform:scale(.9)}
+.sbtns .no,.sbtns .yes{width:66px;height:66px}.sbtns .no{color:var(--bad)}.sbtns .yes{color:#fff;background:linear-gradient(135deg,var(--plum),var(--berry));border-color:transparent}
+.sbtns .no svg,.sbtns .yes svg{width:28px;height:28px;stroke-width:2}
+.sbtns .mid{padding:11px 18px;font-size:14px;color:var(--mute)}
+.shint{display:flex;justify-content:space-between;max-width:300px;margin:8px auto 0;font-size:12px;color:var(--mute);direction:ltr}
+.count{color:var(--mute);font-size:13px;text-align:center;margin-top:6px}
+.taste{background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:18px;padding:12px 16px;margin-top:16px;font-size:13.5px}
+.taste b{font-size:12.5px;color:var(--mute);font-weight:500}.taste .t{display:flex;align-items:center;gap:10px;margin-top:6px}
+.taste .t span{flex:0 0 130px}.taste .t i{display:block;height:6px;border-radius:9px;background:linear-gradient(90deg,var(--plum),var(--berry));transition:width .5s var(--ease)}
+@media (min-width:980px){.stage .taste{display:none}}
+.toast{position:fixed;top:70px;left:50%;width:max-content;transform:translateX(-50%);z-index:30;display:flex;align-items:center;gap:12px;background:#fff;border:1px solid rgba(200,164,106,.5);border-radius:20px;padding:10px 16px;padding-inline-start:10px;box-shadow:0 18px 40px -14px rgba(115,45,105,.45);animation:toast 3.2s var(--ease) both;max-width:92vw}
+.toast img{width:44px;height:44px;object-fit:contain;border-radius:12px;background:var(--blush2);mix-blend-mode:multiply}
+.toast b{display:block;font-size:13.5px}.toast a{font-size:13px;font-weight:600}
+@keyframes toast{0%{opacity:0;transform:translate(-50%,-16px)}10%,85%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,-16px)}}
+
+/* الثقة */
+.trust{max-width:1200px;margin:0 auto 14px;padding:0 16px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:760px){.trust{grid-template-columns:repeat(4,1fr)}}
+.trust div{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:16px;padding:10px 12px;font-size:13px;line-height:1.45}
+.trust svg{color:var(--plum);width:24px;height:24px}.trust b{display:block;font-weight:600;font-size:13.5px}.trust span{color:var(--mute);font-size:12px}
+.proto{text-align:center;font-size:11.5px;color:var(--mute);margin:0 0 26px}
+
+.pc .img img,.sc .img img,.hit img{mix-blend-mode:multiply}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="bg" id="bg"><i></i><i></i><i></i></div>
+<header class="hd">
+  <a class="store" id="storeLink" href="https://paris-avenues.com/ar"><svg class="i flip" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg><span id="storeTxt">المتجر</span></a>
+  <img src="https://cdn.files.salla.network/other/762184462/59426dac-b14f-48d5-bf25-d4d296f2f692-original.webp" alt="Paris Avenues">
+  <button class="lang" id="lang" type="button"></button>
+</header>
+<div class="layout">
+  <main class="stage" id="app"></main>
+  <aside class="show" id="show" aria-hidden="true"></aside>
+</div>
+<section class="trust" id="trust"></section>
+<p class="proto" id="proto"></p>
+<script>window.QUIZ_PROD=1</script>
+<script>
+(function boot() {
+  'use strict';
+  var app = document.getElementById('app'), show = document.getElementById('show');
+  if (!window.QUIZ_DATA) {
+    app.innerHTML = '<div class="loading"><div class="rings"><i></i><i></i><i></i></div></div>';
+    fetch('data/core.json').then(function (r) { return r.json(); }).then(function (d) { window.QUIZ_DATA = d; boot(); })
+      .catch(function () { app.innerHTML = '<p class="note">تعذّر التحميل. أعد المحاولة. / Loading failed, please retry.</p>'; });
+    return;
+  }
+  var D = window.QUIZ_DATA, PROD = !!window.QUIZ_PROD;
+  D.r = D.r || {}; D.fp = D.fp || {};
+
+  // ---------- اللغة
+  var qs = new URLSearchParams(location.search);
+  var LANG = qs.get('lang') || (function () { try { return localStorage.getItem('pa_quiz_lang'); } catch (e) { return null; } })() || 'ar';
+  if (LANG !== 'en') LANG = 'ar';
+  var EN = LANG === 'en';
+
+  var T = {
+    ar: {
+      title: 'اكتشف عطرك القادم | باريس أفنيوز', store: 'المتجر', langBtn: 'English', proto: 'نموذج تجريبي محلي، لا يغيّر شيئاً في المتجر',
+      kicker: 'مستشار العطور من باريس أفنيوز', h1: 'اكتشف عطرك القادم',
+      lead: 'أجب عن أسئلة قليلة، ونقترح لك من مجموعتنا المتوفرة عطوراً تشبهك، مع سبب كل اقتراح.',
+      c1: 'أعرف عطراً أحبه', c1s: 'اختر عطراً جرّبته، ونرشّح لك ما يوافق ذوقك',
+      c2: 'ساعدني على اكتشاف ذوقي', c2s: 'تصفّح عطوراً شهيرة، أو اختر الروائح التي تفضّلها',
+      c3: 'أبحث عن هدية', c3s: 'نختار معك هدية تليق بمن تحب',
+      back: 'رجوع', next: 'التالي', of: '{0} من {1}',
+      gk: 'هل تعرف عطراً يفضّله صاحب الهدية؟', gks: 'يكفي أن تعرف عطراً واحداً.',
+      gkY: 'نعم، أعرف عطراً يحبه', gkYs: 'نرشّح بما يوافق ذوقه', gkN: 'لا أعرف', gkNs: 'نرشّح من أكثر العطور إجماعاً',
+      sq: 'ما العطر الذي جرّبته وأحببته؟', sq_g: 'ما العطر الذي يفضّله؟', sqs: 'اكتب الاسم بالعربية أو الإنجليزية. يكفي عطر واحد، ويمكنك إضافة عطر ثانٍ.',
+      sph: 'مثال: سوفاج، Aventus، باكارا روج', empty: 'لم نجد هذا الاسم في موسوعتنا. جرّب كتابة أخرى، أو اكتب الاسم بالإنجليزية.', instock: 'متوفر', rm: 'حذف',
+      iq: 'ما الذي تتطلّع إليه في عطرك القادم؟', iq_g: 'كيف تريد أن تكون الهدية؟', iqs: 'مقارنةً بـ«{0}»', iqs2: 'مقارنةً بـ«{0}» و«{1}»',
+      iClose: 'قريب منه', iCloseS: 'الإحساس ذاته قدر الإمكان', iTweak: 'الطابع نفسه بلمسة مختلفة', iTweakS: 'أقل حلاوة، أهدأ، أطول ثباتاً…',
+      iDiff: 'اتجاه جديد', iDiffS: 'تجربة مختلفة تستحق الاكتشاف', iNo: 'لم يناسبني', iNo_g: 'لم يناسبه', iNoS: 'ونتجنّب ما لم يرُق',
+      tq: 'ما اللمسة التي تودّ تغييرها؟', tqs: 'اختر لمسة أو لمستين.',
+      tSweet: 'أقل حلاوة', tCalm: 'حضور أهدأ', tCalmS: 'فوحان أخف', tLong: 'ثبات أطول', tLongS: 'يرافقك حتى آخر اليوم', tFresh: 'أكثر انتعاشاً', tWarm: 'أدفأ وأعمق',
+      wq: 'ما الذي لم يرُق لك فيه؟', wq_g: 'ما الذي لم يرُق له فيه؟', wqs: 'لنتجنّبه في ترشيحاتنا.',
+      wSweet: 'حلاوته زائدة', wStrong: 'فوحانه قوي', wWeak: 'لا يدوم طويلاً', wHeavy: 'رائحته ثقيلة', wUnk: 'لا أعرف السبب', wUnkS: 'نقترح عليك اتجاهاً مختلفاً',
+      gq: 'لمن العطر؟', gq_g: 'لمن الهدية؟', gqs: 'لنرشّح من العطور الملائمة.',
+      gMen: 'رجالي', gWomen: 'نسائي', gAny: 'للجنسين', gAnyS: 'يشمل العطور المشتركة', gMen_g: 'لرجل', gWomen_g: 'لامرأة',
+      mq: 'كيف تفضّل أن نكتشف ذوقك؟', mqs: 'كلتا الطريقتين تقودك إلى عطور متوفرة تناسبك.',
+      mSw: 'تصفّح عطوراً شهيرة', mSwS: 'اسحب يميناً لما يعجبك، ويساراً لما لا يعجبك', mCards: 'اختر الروائح المفضّلة', mCardsS: 'حمضيات، عود، ورد، فانيلا…',
+      lq: 'أيّ الروائح تأسرك؟', lqs: 'اختر رائحة أو اثنتين.',
+      dq: 'هل هناك رائحة لا تفضّلها؟', dqs: 'سنقدّم عليها غيرها، حتى لو جمعت ما تحب.', dSkip: 'لا يوجد، تخطَّ',
+      yq: 'أيّ وصف أقرب إلى ذوقه؟', yqs: 'نختار من أكثر العطور إجماعاً.',
+      oq: 'متى ستضعه غالباً؟', oq_g: 'متى سيضعه غالباً؟', oqs: 'المناسبة تحدد قوة الحضور الملائمة.',
+      oOffice: 'العمل والمكتب', oOfficeS: 'حضور معتدل', oDaily: 'الاستخدام اليومي', oDailyS: 'خفيف ومريح', oEve: 'المساء والمناسبات', oEveS: 'حضور لافت', oMix: 'متعدد الاستخدام', oMixS: 'يلائم كل الأوقات',
+      bq: 'ما الميزانية التي تناسبك للعبوة؟', bq_g: 'ما ميزانية الهدية؟', bqs: 'الأسعار كما تظهر في المتجر.',
+      b1: 'حتى 350 ر.س', b2: 'من 350 إلى 550 ر.س', b3: 'من 550 إلى 900 ر.س', b4: 'أكثر من 900 ر.س', b5: 'ميزانية مفتوحة',
+      xq: 'سؤال أخير يفاضل بين أقرب الخيارات.', any: 'لا فرق',
+      silQ: 'هل تفضّل أن يبقى العطر قريباً منك، أم أن يلاحظه من حولك؟', silQ_g: 'هل يفضّل أن يبقى العطر قريباً منه، أم أن يلاحظه من حوله؟',
+      silLo: 'قريباً مني', silLo_g: 'قريباً منه', silLoS: 'هادئ يشعر به من يقترب', silHi: 'يلاحظه من حولي', silHi_g: 'يلاحظه من حوله', silHiS: 'حضور واضح',
+      swQ: 'هل تميل إلى الدافئ الحلو، أم إلى المنعش الخفيف؟', swQ_g: 'هل يميل إلى الدافئ الحلو، أم إلى المنعش الخفيف؟',
+      swSw: 'دافئ وحلو', swSwS: 'فانيلا، عنبر، توابل', swFr: 'منعش وخفيف', swFrS: 'حمضيات، بحر، أعشاب',
+      seQ: 'هل ستضعه أكثر في الصيف أم في الشتاء؟', seQ_g: 'هل سيضعه أكثر في الصيف أم في الشتاء؟',
+      seSu: 'الصيف وأجواؤه الحارة', seSuS: 'يصمد في الحر', seWi: 'الشتاء وأمسياته الباردة', seWiS: 'دافئ ومريح',
+      sh: 'هل يعجبك؟', shs: 'اسحب يميناً إن أعجبك، ويساراً إن لم يعجبك. إن لم تجرّبه، احكم من وصف رائحته أو اختر «لم أجرّبه».',
+      sYes: 'أعجبني', sNo: 'لا', sMid: 'لم أجرّبه', sHintL: '← لا يعجبني', sHintR: 'يعجبني →', stock2: 'متوفر لدينا',
+      sDone: 'اتضح ذوقك', sDoneS: 'من {0} عطراً قيّمتها. سؤالان أخيران ونعرض ترشيحاتك.', sCont: 'متابعة',
+      sNone: 'لم يعجبك شيء بعد؟', sNoneS: 'لا بأس. نعرض عليك عطوراً أخرى، أو اختر الروائح بنفسك.', sMore: 'عطور أخرى', sCards: 'اختيار الروائح بدلاً من ذلك',
+      sEnough: 'اكتفيت، انتقل إلى الأسئلة', sMatch: '«{0}» متوفر لدينا', view: 'عرض العطر', taste: 'بصمتك العطرية حتى الآن',
+      ld: 'نُعدّ ترشيحاتك…', lds: 'نقارن ذوقك بـ{0} عطراً متوفراً',
+      rBest: 'ترشيحاتنا لك', rBest_g: 'هدايا تليق بمن تحب', rRare: 'خيارات أقل انتشاراً', rDiff: 'اتجاهات أخرى تناسبك',
+      rib: 'الأقرب إلى ذوقك', from: 'يبدأ من {0}', nope: 'لا يناسبني', nopeT: 'استبدله بترشيح آخر',
+      mDiff: 'اتجاه مختلف', mRare: 'أقل انتشاراً', mEdit: 'تعديل الإجابات', mRestart: 'البدء من جديد',
+      nSame: '«{0}» متوفر لدينا بسعر {1}.', nSib: 'إصدارات أخرى من الخط ذاته متوفرة: ', nOos: '«{0}» غير متوفر حالياً. يمكنك طلب «أعلمني عند توفره» من {1}، وإليك أقرب البدائل المتوفرة.', nOosL: 'صفحته',
+      nWeak: 'لم نجد ما يقاربه كثيراً ضمن ميزانيتك.', nWeak2: ' أقرب خيار هو «{0}» بسعر {1}.', nNone: 'لا يتوفر عطر يطابق جميع إجاباتك. جرّب ميزانية أوسع، أو اختر «لا فرق».',
+      sets: 'أطقم هدايا ضمن ميزانيتك', viewSet: 'عرض الطقم',
+      prof: 'بصمتك العطرية', profT: 'يميل ذوقي إلى {0}{1}.', pLow: '، وأفضّل حضوراً هادئاً', pHigh: '، وأحب الحضور الواضح', pOffice: '، وأفضّل حضوراً هادئاً في العمل', pEve: '، وأحب الحضور اللافت في المساء',
+      wa: 'مشاركة عبر واتساب', waT: 'اكتشف عطرك القادم مع باريس أفنيوز:',
+      foot: 'الترشيحات من العطور المتوفرة وفق تحديث {0}، والسعر المعروض هو أقل سعر للعطر.', footP: 'السعر المعروض هو أقل سعر للعطر.',
+      rRem: 'يذكّر كثيرين بـ«{0}»', rColl: 'من مجموعة «{0}» ذاتها', rLessSw: 'أقل حلاوة من «{0}»', rCalm: 'أهدأ فوحاناً من «{0}»', rLong: 'أطول ثباتاً من «{0}»',
+      rFresh: 'أكثر انتعاشاً من «{0}»', rWarm: 'أدفأ وأعمق من «{0}»', rShare: 'يشاركه نفحات {0}', rNew: 'اتجاه جديد: {0}', rNear: 'قريب من «{0}» الذي أعجبك',
+      rTaste: 'فيه {0}، وهو ما يميل إليه ذوقك', rPick: 'فيه {0} التي اخترتها', rStyle: 'يليق بالذوق «{0}»', rLoved: 'من أكثر العطور إجماعاً',
+      rOffice: 'فوحانه معتدل يلائم أجواء العمل', rEve: 'حضوره لافت في المساء والمناسبات', rSummer: 'محبوب في الصيف', rWinter: 'مفضّل في الشتاء', rPerf: 'الثبات {0} · الفوحان {1}',
+      lon: ['خفيف', 'متوسط', 'جيد', 'عالٍ'], sil: ['قريب من البشرة', 'معتدل', 'ملحوظ', 'فوّاح'], and: ' و', sep: '، ',
+      pStart: ['مستشارك العطري', 'ترشيحات من مجموعتنا المتوفرة، مع سبب كل ترشيح'], pDef: ['ملامح عطرك تتشكّل', 'إجاباتك ترسم ملامح عطرك'],
+      pSwipe: ['ملامح عطرك تتشكّل', 'كل اختيار يقرّبنا من ذوقك'], pRes: ['ترشيحاتك جاهزة', 'لكل عطر سبب واضح'],
+      pKick: 'باريس أفنيوز', pAns: 'إجاباتك', pFrom: 'من باريس أفنيوز', pStock: '{0} عطراً متوفراً', pEnc: '{0} عطراً في الموسوعة', pAuth: 'عطور أصلية مضمونة',
+      L: {gift: 'هدية', close: 'قريب منه', tweak: 'لمسة مختلفة', different: 'اتجاه جديد', nosuit: 'لم يناسب', less_sweet: 'أقل حلاوة', calmer: 'أهدأ', longer: 'أثبت', fresher: 'أنعش', warmer: 'أدفأ',
+          office: 'العمل', daily: 'يومي', evening: 'المساء', mixed: 'متعدد', men: 'رجالي', women: 'نسائي', any: 'للجنسين'},
+      bShort: ['حتى 350', 'حتى 550', 'حتى 900', 'أكثر من 900', 'ميزانية مفتوحة'],
+      trust: [['عطور أصلية 100%', 'مختومة بضمان أصالة'], ['استرجاع سهل', 'خلال 7 أيام'], ['قسّط مشترياتك', 'مع تابي وتمارا'], ['تغليف الهدايا', 'مع بطاقة إهداء']]
+    },
+    en: {
+      title: 'Discover Your Next Fragrance | Paris Avenues', store: 'Store', langBtn: 'العربية', proto: 'Local prototype. Nothing in the store is changed.',
+      kicker: 'Paris Avenues Fragrance Advisor', h1: 'Discover your next fragrance',
+      lead: 'Answer a few questions and we will suggest fragrances from our in-stock collection that suit you, each with the reason behind it.',
+      c1: 'I know a fragrance I love', c1s: 'Choose one you have tried, and we will match your taste',
+      c2: 'Help me discover my taste', c2s: 'Browse well-known fragrances, or choose the notes you prefer',
+      c3: 'I am looking for a gift', c3s: 'We will help you choose a gift worthy of them',
+      back: 'Back', next: 'Next', of: '{0} of {1}',
+      gk: 'Do you know a fragrance they love?', gks: 'Knowing one is enough.',
+      gkY: 'Yes, I know one they love', gkYs: 'We will match their taste', gkN: 'I am not sure', gkNs: 'We will suggest widely loved choices',
+      sq: 'Which fragrance have you tried and loved?', sq_g: 'Which fragrance do they love?', sqs: 'Type the name in English or Arabic. One is enough; you may add a second.',
+      sph: 'e.g. Sauvage, Aventus, Baccarat Rouge', empty: 'We could not find this name in our encyclopedia. Try another spelling, or the Arabic name.', instock: 'In stock', rm: 'Remove',
+      iq: 'What are you looking for in your next fragrance?', iq_g: 'What should the gift be like?', iqs: 'Compared with “{0}”', iqs2: 'Compared with “{0}” and “{1}”',
+      iClose: 'Close to it', iCloseS: 'The same feeling, as closely as possible', iTweak: 'Same character, a subtle twist', iTweakS: 'Less sweet, softer, longer-lasting…',
+      iDiff: 'A new direction', iDiffS: 'Something different worth discovering', iNo: 'It did not suit me', iNo_g: 'It did not suit them', iNoS: 'We will steer clear of what you disliked',
+      tq: 'Which touch would you like to change?', tqs: 'Choose one or two.',
+      tSweet: 'Less sweet', tCalm: 'Softer presence', tCalmS: 'Lighter projection', tLong: 'Longer-lasting', tLongS: 'Stays with you all day', tFresh: 'Fresher', tWarm: 'Warmer and deeper',
+      wq: 'What did you not like about it?', wq_g: 'What did they not like about it?', wqs: 'So we can avoid it in our suggestions.',
+      wSweet: 'Too sweet', wStrong: 'Too strong', wWeak: 'Does not last', wHeavy: 'Too heavy', wUnk: 'Not sure why', wUnkS: 'We will suggest a different direction',
+      gq: 'Who is the fragrance for?', gq_g: 'Who is the gift for?', gqs: 'So we suggest from the right selection.',
+      gMen: 'Men', gWomen: 'Women', gAny: 'Unisex', gAnyS: 'Includes shared fragrances', gMen_g: 'For him', gWomen_g: 'For her',
+      mq: 'How would you like to discover your taste?', mqs: 'Both lead you to in-stock fragrances that suit you.',
+      mSw: 'Browse well-known fragrances', mSwS: 'Swipe right for what you like, left for what you do not', mCards: 'Choose your favourite notes', mCardsS: 'Citrus, oud, rose, vanilla…',
+      lq: 'Which scents draw you in?', lqs: 'Choose one or two.',
+      dq: 'Is there a scent you would rather avoid?', dqs: 'We will favour others, even if they include what you love.', dSkip: 'None, skip',
+      yq: 'Which best describes their taste?', yqs: 'We will choose from widely loved fragrances.',
+      oq: 'When will you wear it most?', oq_g: 'When will they wear it most?', oqs: 'The occasion sets the right level of presence.',
+      oOffice: 'Work and office', oOfficeS: 'Moderate presence', oDaily: 'Everyday', oDailyS: 'Light and easy', oEve: 'Evenings and occasions', oEveS: 'Noticeable presence', oMix: 'Versatile', oMixS: 'Suits any time',
+      bq: 'What is your budget for the bottle?', bq_g: 'What is your gift budget?', bqs: 'Prices as shown in the store.',
+      b1: 'Up to SAR 350', b2: 'SAR 350 – 550', b3: 'SAR 550 – 900', b4: 'Over SAR 900', b5: 'Open budget',
+      xq: 'One final question to choose between the closest options.', any: 'No preference',
+      silQ: 'Should it stay close to you, or be noticed by those around you?', silQ_g: 'Should it stay close to them, or be noticed by those around them?',
+      silLo: 'Close to me', silLo_g: 'Close to them', silLoS: 'Soft, felt up close', silHi: 'Noticed around me', silHi_g: 'Noticed around them', silHiS: 'A clear presence',
+      swQ: 'Do you lean towards warm and sweet, or fresh and light?', swQ_g: 'Do they lean towards warm and sweet, or fresh and light?',
+      swSw: 'Warm and sweet', swSwS: 'Vanilla, amber, spice', swFr: 'Fresh and light', swFrS: 'Citrus, sea, herbs',
+      seQ: 'Will you wear it more in summer or in winter?', seQ_g: 'Will they wear it more in summer or in winter?',
+      seSu: 'Summer heat', seSuS: 'Holds up in hot weather', seWi: 'Winter evenings', seWiS: 'Warm and comforting',
+      sh: 'Do you like it?', shs: 'Swipe right if you like it, left if you do not. Have not tried it? Judge by its scent profile, or choose “Not tried”.',
+      sYes: 'LIKE', sNo: 'NOPE', sMid: 'Not tried', sHintL: '← Not for me', sHintR: 'I like it →', stock2: 'In stock with us',
+      sDone: 'Your taste is clear', sDoneS: 'From {0} fragrances you rated. Two final questions and your suggestions are ready.', sCont: 'Continue',
+      sNone: 'Nothing caught your eye yet?', sNoneS: 'No problem. We can show you other fragrances, or you can choose the notes yourself.', sMore: 'Show me others', sCards: 'Choose notes instead',
+      sEnough: 'That is enough, continue', sMatch: '“{0}” is in stock with us', view: 'View fragrance', taste: 'Your scent profile so far',
+      ld: 'Preparing your suggestions…', lds: 'Comparing your taste with {0} in-stock fragrances',
+      rBest: 'Our suggestions for you', rBest_g: 'Gifts worthy of them', rRare: 'Less widespread choices', rDiff: 'Other directions that suit you',
+      rib: 'Closest to your taste', from: 'From {0}', nope: 'Not for me', nopeT: 'Replace with another suggestion',
+      mDiff: 'A different direction', mRare: 'Less widespread', mEdit: 'Edit answers', mRestart: 'Start over',
+      nSame: '“{0}” is in stock with us at {1}.', nSib: 'Other editions of the same line in stock: ', nOos: '“{0}” is currently unavailable. You can request “Notify me” on {1}; here are the closest in-stock alternatives.', nOosL: 'its page',
+      nWeak: 'We found nothing very close within your budget.', nWeak2: ' The closest option is “{0}” at {1}.', nNone: 'No in-stock fragrance matches all your answers. Try a wider budget, or choose “No preference”.',
+      sets: 'Gift sets within your budget', viewSet: 'View set',
+      prof: 'Your scent profile', profT: 'My taste leans towards {0}{1}.', pLow: ', with a soft presence', pHigh: ', with a clear presence', pOffice: ', with a soft presence at work', pEve: ', with a striking presence in the evening',
+      wa: 'Share on WhatsApp', waT: 'Discover your next fragrance with Paris Avenues:',
+      foot: 'Suggestions are drawn from fragrances in stock as of {0}; the price shown is the lowest for each fragrance.', footP: 'The price shown is the lowest for each fragrance.',
+      rRem: 'Reminds many of “{0}”', rColl: 'From the same collection as “{0}”', rLessSw: 'Less sweet than “{0}”', rCalm: 'Softer projection than “{0}”', rLong: 'Longer-lasting than “{0}”',
+      rFresh: 'Fresher than “{0}”', rWarm: 'Warmer and deeper than “{0}”', rShare: 'Shares notes of {0}', rNew: 'A new direction: {0}', rNear: 'Close to “{0}”, which you liked',
+      rTaste: 'Features {0}, which your taste leans towards', rPick: 'Features {0}, as you chose', rStyle: 'Suits a “{0}” taste', rLoved: 'Among the most widely loved fragrances',
+      rOffice: 'Moderate projection, suited to the office', rEve: 'A striking presence for evenings and occasions', rSummer: 'Loved in summer', rWinter: 'A winter favourite', rPerf: 'Longevity: {0} · Projection: {1}',
+      lon: ['light', 'moderate', 'good', 'excellent'], sil: ['close to the skin', 'moderate', 'noticeable', 'strong'], and: ' and ', sep: ', ',
+      pStart: ['Your fragrance advisor', 'Suggestions from our in-stock collection, each with its reason'], pDef: ['Your profile is taking shape', 'Your answers shape your fragrance'],
+      pSwipe: ['Your profile is taking shape', 'Each choice brings us closer to your taste'], pRes: ['Your suggestions are ready', 'Each one comes with a clear reason'],
+      pKick: 'Paris Avenues', pAns: 'Your answers', pFrom: 'From Paris Avenues', pStock: '{0} fragrances in stock', pEnc: '{0} in our encyclopedia', pAuth: 'Guaranteed authentic',
+      L: {gift: 'Gift', close: 'Close to it', tweak: 'Subtle twist', different: 'New direction', nosuit: 'Did not suit', less_sweet: 'Less sweet', calmer: 'Softer', longer: 'Longer-lasting', fresher: 'Fresher', warmer: 'Warmer',
+          office: 'Work', daily: 'Everyday', evening: 'Evening', mixed: 'Versatile', men: 'Men', women: 'Women', any: 'Unisex'},
+      bShort: ['Up to 350', 'Up to 550', 'Up to 900', 'Over 900', 'Open budget'],
+      trust: [['100% Authentic', 'Sealed and guaranteed'], ['Easy Returns', 'Within 7 days'], ['Pay in instalments', 'With Tabby and Tamara'], ['Gift Wrapping', 'With a gift card']]
+    }
+  };
+  function t(k) { var s = T[LANG][k], a = arguments; if (typeof s !== 'string') return s; return s.replace(/\{(\d)\}/g, function (m, i) { return a[+i + 1]; }); }
+  function tg(k) { return st.gift && T[LANG][k + '_g'] ? T[LANG][k + '_g'] : T[LANG][k]; }
+  function join(arr) { return arr.length < 2 ? (arr[0] || '') : arr.slice(0, -1).join(t('sep')) + t('and') + arr[arr.length - 1]; }
+
+  // ---------- الأيقونات
+  var ICONS = {
+    citrus: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><path d="M12 6.5v11M7.2 9.2l9.6 5.6M7.2 14.8l9.6-5.6"/>',
+    sea: '<path d="M2 8c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2M2 13c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2M2 18c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2"/>',
+    musk: '<path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M18.5 15l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/>',
+    flower: '<circle cx="12" cy="9" r="2.2"/><path d="M12 6.8c-.6-2.6 2.6-3.6 3.2-1.4.5 1.8-1.4 3-3.2 3.6M12 6.8c.6-2.6-2.6-3.6-3.2-1.4-.5 1.8 1.4 3 3.2 3.6M14.2 9.4c2.5-.4 3.1 2.9.8 3.2-1.8.3-2.8-1.6-3-3.4M9.8 9.4c-2.5-.4-3.1 2.9-.8 3.2 1.8.3 2.8-1.6 3-3.4M12 11.4V21M12 17.5c-1.6-1.8-3.6-2-5-1.2M12 19c1.6-1.6 3.4-1.8 4.6-1"/>',
+    sweet: '<path d="M5.5 11.5h13l-1.8 8.5H7.3z"/><path d="M5.5 11.5C5.5 8 8.4 6 12 6s6.5 2 6.5 5.5"/><path d="M12 6V3.5M9.5 14.5l.6 3M14.5 14.5l-.6 3"/>',
+    wood: '<ellipse cx="8" cy="12" rx="4.5" ry="7"/><ellipse cx="8" cy="12" rx="1.8" ry="3"/><path d="M8 5h9c2.5 0 4.5 3.1 4.5 7s-2 7-4.5 7H8"/>',
+    oud: '<path d="M12 21.5c-3.3 0-5.5-2.3-5.5-5.2 0-3.4 3.2-4.6 3.2-7.8 0 0 2.3 1.1 2.3 4 1-1.4 1.8-3.2 1.6-5 2.3 1.6 3.9 4.6 3.9 7.6 0 3.8-2.2 6.4-5.5 6.4z"/><path d="M12 21.5c-1.4 0-2.3-1-2.3-2.3 0-1.6 1.4-2.2 1.4-3.6 1.6.8 3.2 2.1 3.2 3.6 0 1.3-1 2.3-2.3 2.3z"/>',
+    spice: '<path d="M12 2.8l1.9 6.4 6.3-1.6-4.5 4.4 4.5 4.4-6.3-1.6L12 21.2l-1.9-6.4-6.3 1.6 4.5-4.4-4.5-4.4 6.3 1.6z"/><circle cx="12" cy="12" r="1.6"/>',
+    fruit: '<circle cx="7.5" cy="16.5" r="3.6"/><circle cx="16.5" cy="17" r="3.6"/><path d="M7.8 12.9C9 8.5 12.5 5 17.5 3.2M16.3 13.4c-.6-4.2-.6-7.2 1.2-10.2"/><path d="M17.5 3.2c-2.4-.4-4.6.6-5.5 2.6"/>',
+    search: '<circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/>',
+    gift: '<rect x="3.5" y="8.5" width="17" height="4" rx="1"/><path d="M5 12.5V20h14v-7.5M12 8.5V20M12 8.5C10.5 4.5 6.5 4.8 7.2 7c.4 1.3 2.7 1.5 4.8 1.5zM12 8.5c1.5-4 5.5-3.7 4.8-1.5-.4 1.3-2.7 1.5-4.8 1.5z"/>',
+    bottle: '<rect x="6" y="9" width="12" height="12" rx="3"/><path d="M9.5 9V6.5h5V9M10.5 6.5V3.5h3v3"/><path d="M9 15h6"/>',
+    compass: '<circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>',
+    heart: '<path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/>',
+    x: '<path d="M6 6l12 12M18 6L6 18"/>', check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+    back: '<path d="M9 6l6 6-6 6"/>', next: '<path d="M15 6l-6 6 6 6"/>',
+    swap: '<path d="M4 9h13l-3.5-3.5M20 15H7l3.5 3.5"/>',
+    refresh: '<path d="M20 11a8 8 0 0 0-14.6-4.5M4 4v3.5h3.5M4 13a8 8 0 0 0 14.6 4.5M20 20v-3.5h-3.5"/>',
+    target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3"/>',
+    sliders: '<path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/>',
+    ban: '<circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/>',
+    brief: '<rect x="3.5" y="7.5" width="17" height="12" rx="2"/><path d="M9 7.5V5.5h6v2M3.5 12.5h17"/>',
+    sun: '<circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6L7 7M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4"/>',
+    moon: '<path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/>',
+    shuffle: '<path d="M3 7h3.5c4.5 0 6.5 10 11 10H21M3 17h3.5c1.8 0 3-1.5 4-3.5M14 9.5c1-1.5 2-2.5 3.5-2.5H21M18.5 4.5L21 7l-2.5 2.5M18.5 14.5L21 17l-2.5 2.5"/>',
+    drop: '<path d="M12 3.5c3 4 6 7.2 6 10.5a6 6 0 0 1-12 0c0-3.3 3-6.5 6-10.5z"/>',
+    dropm: '<path d="M12 3.5c3 4 6 7.2 6 10.5a6 6 0 0 1-12 0c0-3.3 3-6.5 6-10.5z"/><path d="M9.5 14.5h5"/>',
+    wave: '<path d="M3 12h3l2-5 4 10 2-5h7"/>', clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>',
+    leaf: '<path d="M5 19C5 10 10.5 5 20 4.5 19.5 14 14.5 19 5 19z"/><path d="M5 19l8-8"/>',
+    flame: '<path d="M12 21.5c-3.6 0-6-2.5-6-5.7 0-4.2 4-5.3 4-9.3 0 0 2.6 1.3 2.6 4.6 1.1-1.5 1.8-3.4 1.6-5.3 2.6 1.8 3.8 5.3 3.8 8.4 0 4.3-2.4 7.3-6 7.3z"/>',
+    weight: '<path d="M7 9h10l2.5 11h-15z"/><circle cx="12" cy="6" r="2.2"/>',
+    help: '<circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.8M12 17h.01"/>',
+    man: '<circle cx="10" cy="14" r="5.5"/><path d="M14 10l6-6M15.5 4H20v4.5"/>', woman: '<circle cx="12" cy="9" r="5.5"/><path d="M12 14.5V21M9 18h6"/>',
+    both: '<circle cx="9.5" cy="12" r="4.5"/><circle cx="14.5" cy="12" r="4.5"/>',
+    wallet: '<rect x="3" y="6.5" width="18" height="13" rx="2.5"/><path d="M3 10h18M16 14.5h2"/>', crown: '<path d="M4 18h16l1-10-5 4-4-6-4 6-5-4z"/>',
+    infinity: '<path d="M7 9a3 3 0 1 0 0 6c3 0 7-6 10-6a3 3 0 1 1 0 6c-3 0-7-6-10-6z"/>',
+    shield: '<path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>',
+    returnI: '<path d="M4 9h11a5 5 0 0 1 0 10H8"/><path d="M8 5L4 9l4 4"/>', cardI: '<rect x="3" y="6" width="18" height="12" rx="2.5"/><path d="M3 10h18M7 14.5h4"/>',
+    wa: '<path d="M4 20l1.3-3.9A8 8 0 1 1 8 18.8z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8c-1-.4-1.9-1.3-2.3-2.3l.8-1-1-2z"/>',
+    info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>', spark: '<path d="M12 3l1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6z"/>',
+    globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/>'
+  };
+  var FLIP = {back: 1, next: 1};
+  function ic(n) { return '<svg class="i' + (FLIP[n] ? ' flip' : '') + '" viewBox="0 0 24 24" aria-hidden="true">' + (ICONS[n] || '') + '</svg>'; }
+
+  // ---------- البيانات
+  var NA = D.acc.length, ACC_AR, AI = {};
+  D.acc.forEach(function (a, i) { AI[a[0]] = i; });
+  function setAcc() { ACC_AR = D.acc.map(function (a) { return EN ? a[0].replace(/(^|\s)\S/g, function (c) { return c.toUpperCase(); }) : a[1]; }); }
+  setAcc();
+  var FP = {};
+  function fp(pid) {
+    if (FP[pid]) return FP[pid];
+    var r = D.fp[pid]; if (!r) return null;
+    var raw = {}, sum = 0, v = new Float32Array(NA), n = 0;
+    (r[10] || '').split(',').forEach(function (x) {
+      if (!x) return; var p = x.split(':'), i = +p[0], w = +p[1];
+      raw[i] = w; sum += w; v[i] = w; n += w * w;
+    });
+    n = Math.sqrt(n) || 1; for (var i = 0; i < NA; i++) v[i] /= n;
+    var nv = {}, nn = 0;
+    (r[11] || '').split(',').forEach(function (x) { if (!x) return; var p = x.split(':'); nv[p[0]] = +p[1]; nn += p[1] * p[1]; });
+    nn = Math.sqrt(nn) || 1; for (var j in nv) nv[j] /= nn;
+    return (FP[pid] = {nv: nv, lean: r[0], lon: r[1], sil: r[2], su: r[3], wi: r[4], sp: r[5], fa: r[6], day: r[7], night: r[8], rt: r[9], raw: raw, sum: sum || 1, vec: v});
+  }
+  function full(u, pre) { return !u ? '' : /^https?:/.test(u) ? u : pre + u; }
+  function lnk(u) { return !u ? '' : /^p\d+$/.test(u) ? D.url0 + 'x/' + u : full(u, D.url0); }
+  function row(r) {
+    var b = D.brands[r[3]] || ['', ''];
+    return {pid: r[0], ar: r[1], en: r[2], ben: b[0], bar: b[1], year: r[4], votes: r[5], pool: r[6], url: lnk(r[7]), img: r[8] ? full(r[8], D.img0) : '',
+            blob: nz([r[1], r[2], b[0], b[1], r[4] || ''].join(' '))};
+  }
+  var S = D.s.map(row);
+  var SBY = {}; S.forEach(function (x) { SBY[x.pid] = x; });
+  // فهرس البحث الكامل (النشر): يُجلب بعد فتح الصفحة بقليل أو عند فتح البحث
+  var searchP = null;
+  function loadSearch() {
+    if (!D.shards) return Promise.resolve();
+    if (!searchP) searchP = fetch('data/search.json').then(function (r) { return r.json(); }).then(function (rows) {
+      rows.forEach(function (r) { var x = row(r); if (!SBY[x.pid]) { S.push(x); SBY[x.pid] = x; } });
+      var q = document.getElementById('q'); if (q && q.value) drawHits(q.value);
+      SEARCH_N = S.length;
+    }).catch(function () { searchP = null; });
+    return searchP;
+  }
+  var SEARCH_N = D.shards ? 21000 : S.length;
+  var P = D.p.map(function (r, i) { var s = SBY[r[0]] || {}; return {i: i, pid: r[0], name: r[1], brand: r[2], price: r[3], reg: r[4], url: s.url, img: s.img, line: r[5]}; });
+  function nm(pid) { var s = SBY[pid]; return EN ? s.en : short(s.ar); }
+  function br(p) { return EN ? SBY[p.pid].ben : p.brand; }
+  function lurl(u) { return EN ? String(u || '').replace('/ar/', '/en/') : u; }
+
+  function grp(o) { var g = {}; for (var k in o) if (AI[k] != null) g[AI[k]] = o[k]; return g; }
+  var CARDS = [
+    {k: 'citrus', l: ['حمضيات منعشة', 'Fresh citrus'], h: ['ليمون، برغموت', 'Lemon, bergamot'], g: grp({citrus: 1, fresh: .6, green: .4, aromatic: .3})},
+    {k: 'sea', l: ['نسيم البحر', 'Sea breeze'], h: ['مائي، أوزوني', 'Aquatic, ozonic'], g: grp({aquatic: 1, marine: 1, ozonic: .8, fresh: .5, salty: .6})},
+    {k: 'musk', l: ['مسك ونقاء', 'Clean musk'], h: ['مسك، بودرة، صابون', 'Musk, powder, soap'], g: grp({musky: 1, powdery: .6, soapy: .8, aldehydic: .5, iris: .4})},
+    {k: 'flower', l: ['ورود وزهور', 'Rose & florals'], h: ['ورد، ياسمين', 'Rose, jasmine'], g: grp({rose: 1, floral: .9, 'white floral': .9, 'yellow floral': .6, tuberose: .7, violet: .5})},
+    {k: 'sweet', l: ['فانيلا وحلاوة', 'Sweet vanilla'], h: ['فانيلا، كراميل، عسل', 'Vanilla, caramel, honey'], g: grp({vanilla: 1, sweet: .8, caramel: .9, gourmand: .8, honey: .7, cacao: .6, chocolate: .6, almond: .5, coconut: .4, lactonic: .4, coffee: .4})},
+    {k: 'wood', l: ['أخشاب', 'Woods'], h: ['صندل، أرز، فيتيفر', 'Sandalwood, cedar, vetiver'], g: grp({woody: 1, earthy: .5, mossy: .5, patchouli: .5})},
+    {k: 'oud', l: ['عود وبخور', 'Oud & incense'], h: ['عود، عنبر، دخان', 'Oud, amber, smoke'], g: grp({oud: 1, smoky: .8, amber: .6, balsamic: .6, leather: .5, animalic: .3})},
+    {k: 'spice', l: ['توابل دافئة', 'Warm spices'], h: ['قرفة، هيل، فلفل', 'Cinnamon, cardamom, pepper'], g: grp({'warm spicy': 1, 'fresh spicy': .6, 'soft spicy': .7, cinnamon: .8, tobacco: .4})},
+    {k: 'fruit', l: ['فواكه', 'Fruits'], h: ['خوخ، توت، تفاح', 'Peach, berries, apple'], g: grp({fruity: 1, tropical: .7, cherry: .7, sour: .3})}
+  ];
+  var CARD = {}; CARDS.forEach(function (c) { CARD[c.k] = c; });
+  function cl(c) { return c.l[EN ? 1 : 0]; } function ch(c) { return c.h[EN ? 1 : 0]; }
+  var SWEET = grp({sweet: 1, vanilla: 1, caramel: 1, honey: 1, gourmand: 1, cacao: 1, chocolate: 1, almond: .8, coconut: .8, cherry: .6, lactonic: .5, fruity: .3});
+  var FRESH = grp({citrus: 1, fresh: 1, aquatic: 1, marine: 1, ozonic: 1, green: .8, aromatic: .5, 'fresh spicy': .5});
+  var HEAVY = grp({oud: 1, amber: 1, balsamic: 1, leather: 1, smoky: 1, animalic: 1, tobacco: 1, 'warm spicy': .8, patchouli: .5});
+  var GIFT_STYLES = [
+    {k: 'classic', l: ['كلاسيكي أنيق', 'Classic and elegant'], h: ['يميل إلى الرسمي والهادئ', 'Formal and understated'], i: 'wood', mix: {wood: .8, musk: .6, flower: .4, spice: .4}},
+    {k: 'fresh', l: ['عصري منعش', 'Modern and fresh'], h: ['حيوي يفضّل الخفيف', 'Lively, prefers light scents'], i: 'citrus', mix: {citrus: 1, sea: .7, wood: .3}},
+    {k: 'lux', l: ['فخم دافئ', 'Rich and warm'], h: ['يحب العود والحضور اللافت', 'Loves oud and presence'], i: 'oud', mix: {oud: 1, spice: .6, sweet: .4}},
+    {k: 'soft', l: ['ناعم رقيق', 'Soft and delicate'], h: ['يفضّل الهادئ والنظيف', 'Prefers calm, clean scents'], i: 'musk', mix: {musk: 1, flower: .8, fruit: .4}}
+  ];
+  var BUDGETS = [{k: 'b1', max: 350, i: 'wallet'}, {k: 'b2', max: 550, i: 'wallet'}, {k: 'b3', max: 900, i: 'wallet'}, {k: 'b4', max: 1e9, lux: true, i: 'crown'}, {k: 'b5', max: 1e9, i: 'infinity'}];
+
+  function share(f, g) { var s = 0; for (var i in g) if (f.raw[i]) s += f.raw[i] * g[i]; return s / f.sum; }
+  function cardVec(mix) {
+    var v = new Float32Array(NA), n = 0, k, i;
+    for (k in mix) { var g = CARD[k].g; for (i in g) v[i] += g[i] * mix[k]; }
+    for (i = 0; i < NA; i++) n += v[i] * v[i]; n = Math.sqrt(n) || 1;
+    for (i = 0; i < NA; i++) v[i] /= n; return v;
+  }
+  function dot(a, b) { var s = 0; for (var i = 0; i < NA; i++) s += a[i] * b[i]; return s; }
+  function normv(v) { var n = 0, i; for (i = 0; i < NA; i++) n += v[i] * v[i]; n = Math.sqrt(n) || 1; for (i = 0; i < NA; i++) v[i] /= n; return v; }
+
+  function nz(s) {
+    return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/[ً-ْـ]/g, '').replace(/[أإآٱ]/g, 'ا').replace(/ة/g, 'ه').replace(/ى/g, 'ي')
+      .replace(/ؤ/g, 'و').replace(/ئ/g, 'ي').replace(/[^؀-ۿa-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]; }); }
+  var GEN = {eau: 1, de: 1, du: 1, parfum: 1, toilette: 1, le: 1, la: 1, l: 1, les: 1, pour: 1, homme: 1, femme: 1, the: 1, by: 1, extrait: 1, cologne: 1, intense: 1};
+  function baseKey(x) { var w = nz(x.en).split(' ').filter(function (q) { return q && !GEN[q]; }); return x.ben + '|' + (w[0] || x.pid); }
+  function short(name) { return String(name || '').replace(/^(عطر|طقم)\s+/, '').replace(/\s+-\s+.*$/, ''); }
+  function num(n) { return Number(n).toLocaleString('en'); }
+  function money(n) { var v = (Math.round(n * 100) / 100).toLocaleString('en'); return EN ? 'SAR ' + v : v + ' ر.س'; }
+  function track(name, data) { try { if (window.clarity) window.clarity('event', name); } catch (e) {} if (window.console) console.debug('[quiz]', name, data || ''); }
+  function lonWord(x) { return x == null ? '' : t('lon')[x < 40 ? 0 : x < 60 ? 1 : x < 75 ? 2 : 3]; }
+  function silWord(x) { return x == null ? '' : t('sil')[x < 35 ? 0 : x < 55 ? 1 : x < 70 ? 2 : 3]; }
+
+  // ---------- أجزاء البيانات (النشر): بصمة العطر وروابطه تُجلب عند اختياره
+  var loadedShard = {};
+  function ensure(pids) {
+    if (!D.shards) return Promise.resolve();
+    var need = {};
+    pids.forEach(function (p) { var k = p % D.shards; if (!loadedShard[k]) need[k] = 1; });
+    return Promise.all(Object.keys(need).map(function (k) {
+      return fetch('data/s/' + k + '.json').then(function (r) { return r.json(); }).then(function (sh) {
+        loadedShard[k] = 1; var p; for (p in sh.fp) D.fp[p] = sh.fp[p]; for (p in sh.r) D.r[p] = sh.r[p];
+      }).catch(function () {});
+    }));
+  }
+
+  // ---------- الحالة
+  var st, hist;
+  function reset() {
+    st = {gift: false, path: null, giftKnows: null, anchors: [], intent: null, tweaks: [], why: null, gender: null,
+          likes: [], dislikes: [], style: null, occasion: null, budget: null, method: null, swipes: [], swipeDone: false, swipeCap: 12,
+          shown: [], cur: null, nope: [], mode: 'best'};
+    hist = [];
+  }
+  function nextStep() {
+    if (!st.path) return st.gift && st.giftKnows == null ? 'giftKnows' : 'start';
+    if (st.path === 'known') {
+      if (!st.anchors.length) return 'search';
+      if (!st.intent) return 'intent';
+      if (st.intent === 'tweak' && !st.tweaks.length) return 'tweak';
+      if (st.intent === 'nosuit' && !st.why) return 'why';
+    } else {
+      if (!st.gender) return 'gender';
+      if (st.path === 'discover' && !st.method) return 'method';
+      if (st.path === 'discover' && st.method === 'cards' && !st.likes.length) return 'likes';
+      if (st.path === 'discover' && st.method === 'cards' && st.dislikes === null) return 'dislikes';
+      if (st.path === 'discover' && st.method === 'swipe' && !st.swipeDone) return 'swipe';
+      if (st.path === 'giftUnknown' && !st.style) return 'style';
+    }
+    if (!st.occasion) return 'occasion';
+    if (!st.budget) return 'budget';
+    if (st.tie === undefined) { if (st.tieQ === undefined) st.tieQ = pickTie(); if (st.tieQ) return 'tie'; }
+    return 'results';
+  }
+  var TOTAL = {known: 5, discover: 7, giftUnknown: 5};
+  function go(change) { hist.push(JSON.stringify(st)); change(); render(); }
+  function back() { if (!hist.length) return; st = JSON.parse(hist.pop()); render(); }
+
+  // ---------- الحساب
+  function anchorF() {
+    var v = new Float32Array(NA), lean = 0, lon = 0, sil = 0, nl = 0, nlo = 0, ns = 0, sw = 0, fr = 0, hv = 0;
+    st.anchors.forEach(function (pid) {
+      var f = fp(pid); if (!f) return;
+      for (var i = 0; i < NA; i++) v[i] += f.vec[i];
+      if (f.lean != null) { lean += f.lean; nl++; } if (f.lon != null) { lon += f.lon; nlo++; } if (f.sil != null) { sil += f.sil; ns++; }
+      sw += share(f, SWEET); fr += share(f, FRESH); hv += share(f, HEAVY);
+    });
+    var n = st.anchors.length || 1;
+    return {vec: normv(v), lean: nl ? lean / nl : null, lon: nlo ? lon / nlo : null, sil: ns ? sil / ns : null, sw: sw / n, fr: fr / n, hv: hv / n};
+  }
+  function genderRange() {
+    var g = st.gender;
+    if (st.path === 'known') { var a = anchorF(); g = a.lean == null ? 'any' : a.lean >= 65 ? 'men' : a.lean <= 35 ? 'women' : 'any'; }
+    return g === 'men' ? [40, 101] : g === 'women' ? [-1, 60] : [-1, 101];
+  }
+  function effectiveTweaks() {
+    var x = st.tweaks.slice();
+    if (st.intent === 'nosuit') x = {sweet: ['less_sweet'], strong: ['calmer'], weak: ['longer'], heavy: ['fresher'], unknown: []}[st.why] || [];
+    return x;
+  }
+  function target() {
+    if (st.path === 'known') {
+      var a = anchorF(), v = Float32Array.from(a.vec), tw = effectiveTweaks(), i;
+      if (tw.indexOf('less_sweet') >= 0) for (i in SWEET) v[i] *= 0.25;
+      if (tw.indexOf('fresher') >= 0) { for (i in HEAVY) v[i] *= 0.4; for (i in FRESH) v[i] += 0.25 * FRESH[i]; }
+      if (tw.indexOf('warmer') >= 0) { for (i in FRESH) v[i] *= 0.5; for (i in HEAVY) v[i] += 0.25 * HEAVY[i]; }
+      return normv(v);
+    }
+    if (st.path === 'discover' && st.method === 'swipe') return swipeVec(1, -0.5);
+    if (st.path === 'discover') { var mix = {}; st.likes.forEach(function (k) { mix[k] = 1; }); return cardVec(mix); }
+    var s = GIFT_STYLES.filter(function (x) { return x.k === st.style; })[0]; return cardVec(s ? s.mix : {wood: 1});
+  }
+  function noteTarget() {
+    var m = {}, k, n = 0, add = function (pid, w) { var f = fp(pid); if (!f) return; for (var j in f.nv) m[j] = (m[j] || 0) + w * f.nv[j]; };
+    if (st.path === 'known') st.anchors.forEach(function (p) { add(p, 1); });
+    else if (st.path === 'discover' && st.method === 'swipe') { liked().forEach(function (p) { add(p, 1); }); disliked().forEach(function (p) { add(p, -0.5); }); }
+    else return null;
+    for (k in m) { if (m[k] <= 0) delete m[k]; else n += m[k] * m[k]; }
+    if (!n) return null; n = Math.sqrt(n); for (k in m) m[k] /= n; return m;
+  }
+  function ndot(m, f) { var s = 0; for (var j in m) if (f.nv[j]) s += m[j] * f.nv[j]; return s; }
+  function scoreAll(opts) {
+    opts = opts || {};
+    var NT = noteTarget();
+    var T0 = target(), A = st.path === 'known' ? anchorF() : null, tw = st.path === 'known' ? effectiveTweaks() : [];
+    var gr = genderRange(), bud = BUDGETS.filter(function (b) { return b.k === st.budget; })[0] || BUDGETS[4];
+    var maxP = opts.ignoreBudget ? 1e9 : bud.max;
+    var rem = {}, anc = st.path === 'known' ? st.anchors : liked();
+    var DV = st.method === 'swipe' && st.path === 'discover' && disliked().length ? swipeVec(0, 1) : null;
+    anc.forEach(function (pid) { (D.r[pid] || []).forEach(function (x) { var o = rem[x[0]]; if (!o || x[2] > o[2]) rem[x[0]] = [x[1], x[2], pid]; }); });
+    var different = st.intent === 'different' || (st.intent === 'nosuit' && st.why === 'unknown');
+    var out = [], aLines = {};
+    st.anchors.forEach(function (pid) { aLines[baseKey(SBY[pid])] = 1; });
+    P.forEach(function (p) {
+      if (st.anchors.indexOf(p.pid) >= 0 || aLines[baseKey(SBY[p.pid])] || anc.indexOf(p.pid) >= 0) return;
+      if (p.price > maxP) return;
+      var f = fp(p.pid); if (!f) return;
+      if (f.lean != null && (f.lean < gr[0] || f.lean > gr[1])) return;
+      var cos = dot(T0, f.vec);
+      if (NT) cos = 0.6 * cos + 0.4 * ndot(NT, f);
+      var s = different ? 0.75 - Math.abs(cos - 0.35) : cos;
+      var r = rem[p.i];
+      if (r && !different) {
+        if (r[0] === 'r') s += 0.12 + 0.13 * Math.min(1, Math.log(1 + r[1]) / Math.log(41));
+        else if (r[0] === 'c') s += 0.06; else s += 0.04 * r[1] / 30;
+      }
+      if (different && r) s -= 0.2;
+      if (DV) s -= 0.3 * dot(DV, f.vec);
+      (st.dislikes || []).forEach(function (k) { s -= 1.1 * share(f, CARD[k].g); });
+      var csw = share(f, SWEET), cfr = share(f, FRESH), chv = share(f, HEAVY);
+      if (A) {
+        if (tw.indexOf('less_sweet') >= 0) { s += Math.max(-0.3, Math.min(0.15, (A.sw - csw) * 1.2)); if (A.sw > 0.08 && csw > A.sw * 0.85) s -= 0.2; }
+        if (tw.indexOf('calmer') >= 0 && f.sil != null && A.sil != null) { var d = A.sil - f.sil; s += d >= 8 ? 0.12 : d < 0 ? -0.25 : 0; }
+        if (tw.indexOf('longer') >= 0 && f.lon != null && A.lon != null) { var e = f.lon - A.lon; s += e >= 6 ? 0.12 : e < 0 ? -0.25 : 0; }
+        if (tw.indexOf('fresher') >= 0) s += Math.max(-0.2, Math.min(0.15, cfr - A.fr));
+        if (tw.indexOf('warmer') >= 0) s += Math.max(-0.2, Math.min(0.15, chv - A.hv));
+      }
+      if (st.occasion === 'office') { if (f.sil != null && f.sil > 62) s -= (f.sil - 62) / 100 * 1.6; if (chv > 0.35) s -= 0.08; s += (f.day - f.night) / 1500; }
+      else if (st.occasion === 'daily') s += (f.day - f.night) / 2000;
+      else if (st.occasion === 'evening') { s += (f.night - f.day) / 1200; if (f.sil != null && f.sil < 40) s -= 0.08; }
+      if (st.tie) {
+        var q = st.tie;
+        if (q.d === 'sil' && f.sil != null) s += (q.v === 'low' ? (f.sil < 50 ? 0.1 : -0.1) : (f.sil >= 50 ? 0.1 : -0.1));
+        if (q.d === 'sweet') s += (q.v === 'sweet' ? (csw > cfr ? 0.1 : -0.1) : (cfr >= csw ? 0.1 : -0.1));
+        if (q.d === 'season') s += (q.v === 'summer' ? (f.su - f.wi) : (f.wi - f.su)) / 600;
+      }
+      if (bud.lux && !opts.ignoreBudget && p.price < 550) s -= 0.1;
+      var vs = (SBY[p.pid] || {}).votes || 0;
+      if (f.rt) s += (f.rt - 38) / 10 * 0.04;
+      if (st.mode === 'rare') s -= Math.log10(vs + 1) * 0.05; else s += Math.log10(vs + 1) * 0.012;
+      if (st.path === 'giftUnknown') s += Math.log10(vs + 1) * 0.03;
+      out.push({p: p, f: f, s: s, cos: cos, r: r, csw: csw, cfr: cfr, chv: chv});
+    });
+    out.sort(function (a, b) { return b.s - a.s; });
+    return out;
+  }
+  function diverse(list, n, exclude) {
+    var picked = [], lines = {}, brands = {};
+    exclude = exclude || {};
+    for (var i = 0; i < list.length && picked.length < n; i++) {
+      var x = list[i], p = x.p;
+      if (exclude[p.pid] || lines[p.line] || (brands[p.brand] || 0) >= 2) continue;
+      lines[p.line] = 1; brands[p.brand] = (brands[p.brand] || 0) + 1; picked.push(x);
+    }
+    return picked;
+  }
+  function pickTie() {
+    var list = diverse(scoreAll(), 12);
+    if (list.length < 4) return null;
+    var dims = [], tw = st.path === 'known' ? effectiveTweaks() : [];
+    if (st.occasion !== 'office' && tw.indexOf('calmer') < 0)
+      dims.push({d: 'sil', frac: frac(list, function (x) { return x.f.sil != null && x.f.sil >= 50; }), q: 'silQ', o: [['low', 'silLo', 'silLoS', 'drop'], ['high', 'silHi', 'silHiS', 'wave']]});
+    if (tw.indexOf('less_sweet') < 0 && tw.indexOf('fresher') < 0 && tw.indexOf('warmer') < 0 && st.why !== 'sweet')
+      dims.push({d: 'sweet', frac: frac(list, function (x) { return x.csw > x.cfr; }), q: 'swQ', o: [['sweet', 'swSw', 'swSwS', 'sweet'], ['fresh', 'swFr', 'swFrS', 'citrus']]});
+    dims.push({d: 'season', frac: frac(list, function (x) { return x.f.su > x.f.wi; }), q: 'seQ', o: [['summer', 'seSu', 'seSuS', 'sun'], ['winter', 'seWi', 'seWiS', 'moon']]});
+    dims = dims.filter(function (d) { return d.frac >= 0.3 && d.frac <= 0.7; });
+    if (!dims.length) return null;
+    dims.sort(function (a, b) { return Math.abs(a.frac - 0.5) - Math.abs(b.frac - 0.5); });
+    return dims[0];
+  }
+  function frac(list, fn) { var n = 0; list.forEach(function (x) { if (fn(x)) n++; }); return n / list.length; }
+  function topAccords(f, n) { return Object.keys(f.raw).sort(function (a, b) { return f.raw[b] - f.raw[a]; }).slice(0, n).map(function (i) { return ACC_AR[i]; }); }
+
+  function reasons(x) {
+    var f = x.f, out = [], A = st.path === 'known' ? anchorF() : null, tw = st.path === 'known' ? effectiveTweaks() : [];
+    var an = x.r ? nm(x.r[2]) : st.anchors.length ? nm(st.anchors[0]) : '';
+    if (x.r && x.r[0] === 'r' && st.intent !== 'different') out.push(t('rRem', an));
+    else if (x.r && x.r[0] === 'c' && st.intent !== 'different') out.push(t('rColl', an));
+    if (A) {
+      if (tw.indexOf('less_sweet') >= 0 && A.sw > 0.05 && x.csw <= A.sw * 0.85) out.push(t('rLessSw', an));
+      if (tw.indexOf('calmer') >= 0 && f.sil != null && A.sil != null && f.sil < A.sil - 5) out.push(t('rCalm', an));
+      if (tw.indexOf('longer') >= 0 && f.lon != null && A.lon != null && f.lon > A.lon + 4) out.push(t('rLong', an));
+      if (tw.indexOf('fresher') >= 0 && x.cfr > A.fr + 0.03) out.push(t('rFresh', an));
+      if (tw.indexOf('warmer') >= 0 && x.chv > A.hv + 0.03) out.push(t('rWarm', an));
+      if (st.intent === 'close' && out.length < 2) {
+        var a0 = st.anchors.map(fp)[0], shared = [];
+        if (a0) Object.keys(f.raw).sort(function (a, b) { return f.raw[b] - f.raw[a]; }).forEach(function (i) { if (a0.raw[i] >= 50 && f.raw[i] >= 50 && shared.length < 2) shared.push(ACC_AR[i]); });
+        if (shared.length) out.push(t('rShare', join(shared)));
+      }
+      if (st.intent === 'different') out.push(t('rNew', join(topAccords(f, 2))));
+    } else if (st.path === 'discover' && st.method === 'swipe') {
+      if (!x.r) { var near = null, best = 0.78; liked().forEach(function (pid) { var c = dot(fp(pid).vec, f.vec); if (c > best) { best = c; near = pid; } });
+        if (near) out.push(t('rNear', nm(near))); }
+      var tb = tasteBars().slice(0, 2).map(function (y) { return y[0]; });
+      if (tb.length) out.push(t('rTaste', join(tb)));
+    } else if (st.path === 'discover') {
+      var hit = st.likes.filter(function (k) { return share(f, CARD[k].g) >= 0.12; }).map(function (k) { return cl(CARD[k]); });
+      if (hit.length) out.push(t('rPick', join(hit)));
+    }
+    if (st.path === 'giftUnknown') { var gs = GIFT_STYLES.filter(function (s) { return s.k === st.style; })[0]; if (gs) out.push(t('rStyle', gs.l[EN ? 1 : 0])); }
+    var vv = (SBY[x.p.pid] || {}).votes || 0;
+    if ((st.path === 'giftUnknown' || st.path === 'discover') && vv >= 5000 && st.mode !== 'rare') out.push(t('rLoved'));
+    if (st.occasion === 'office' && f.sil != null && f.sil <= 55) out.push(t('rOffice'));
+    else if (st.occasion === 'evening' && f.sil != null && f.sil >= 55) out.push(t('rEve'));
+    if (st.tie && st.tie.d === 'season') { if (st.tie.v === 'summer' && f.su >= 60) out.push(t('rSummer')); if (st.tie.v === 'winter' && f.wi >= 60) out.push(t('rWinter')); }
+    if (out.length < 3 && f.lon != null) out.push(t('rPerf', lonWord(f.lon), silWord(f.sil)));
+    return out.slice(0, 3);
+  }
+
+  // ---------- السوايب
+  var ORDER = ['citrus', 'sweet', 'oud', 'flower', 'wood', 'sea', 'musk', 'spice', 'fruit'];
+  var famousCache = {};
+  function famFamily(f) { var bestK = null, b = -1; CARDS.forEach(function (c) { var s = share(f, c.g); if (s > b) { b = s; bestK = c.k; } }); return bestK; }
+  function famous() {
+    var gr = genderRange(), key = gr.join(',');
+    if (famousCache[key]) return famousCache[key];
+    var list = S.filter(function (x) { var f = fp(x.pid); return f && x.votes >= 1500 && x.img && (f.lean == null || (f.lean >= gr[0] && f.lean <= gr[1])); })
+      .sort(function (a, b) { return b.votes - a.votes; }).slice(0, 450);
+    list.forEach(function (x) { x.fam = famFamily(fp(x.pid)); });
+    return (famousCache[key] = list);
+  }
+  function liked() { return st.swipes.filter(function (s) { return s.v === 1; }).map(function (s) { return s.pid; }); }
+  function disliked() { return st.swipes.filter(function (s) { return s.v === -1; }).map(function (s) { return s.pid; }); }
+  function swipeVec(wl, wd) {
+    var v = new Float32Array(NA), i;
+    st.swipes.forEach(function (s) { var f = fp(s.pid), w = s.v === 1 ? wl : s.v === -1 ? wd : 0; if (f && w) for (i = 0; i < NA; i++) v[i] += w * f.vec[i]; });
+    for (i = 0; i < NA; i++) if (v[i] < 0) v[i] = 0;
+    return normv(v);
+  }
+  function tasteBars() {
+    var sc = {};
+    st.swipes.forEach(function (s) { if (!s.v) return; var f = fp(s.pid); CARDS.forEach(function (c) { sc[c.k] = (sc[c.k] || 0) + (s.v === 1 ? 1 : -0.5) * share(f, c.g); }); });
+    return CARDS.map(function (c) { return [cl(c), sc[c.k] || 0]; }).filter(function (x) { return x[1] > 0.04; }).sort(function (a, b) { return b[1] - a[1]; });
+  }
+  function nextCard() {
+    var seen = {}, lines = {};
+    st.swipes.forEach(function (s) { seen[s.pid] = 1; lines[baseKey(SBY[s.pid])] = 1; });
+    var pool = famous().filter(function (x) { return !seen[x.pid] && !lines[baseKey(x)]; });
+    if (!pool.length) return null;
+    var n = st.swipes.length;
+    if (n < 6 || !liked().length) {
+      var cnt = {}; st.swipes.forEach(function (s) { var f = SBY[s.pid].fam; cnt[f] = (cnt[f] || 0) + 1; });
+      var fams = ORDER.slice().sort(function (a, b) { return (cnt[a] || 0) - (cnt[b] || 0) || ORDER.indexOf(a) - ORDER.indexOf(b); });
+      for (var k = 0; k < fams.length; k++) { var hit = pool.filter(function (x) { return x.fam === fams[k]; })[0]; if (hit) return hit; }
+      return pool[0];
+    }
+    var T0 = swipeVec(1, -0.5), DV = disliked().length ? swipeVec(0, 1) : null;
+    var scored = pool.slice(0, 300).map(function (x) { var f = fp(x.pid); return {x: x, c: dot(T0, f.vec) - (DV ? 0.3 * dot(DV, f.vec) : 0)}; });
+    if (n % 2 === 0) { scored.sort(function (a, b) { return b.c - a.c; }); return scored[0].x; }
+    var mid = scored.filter(function (s) { return s.c > 0.35 && s.c < 0.7; });
+    return (mid[0] || scored[0]).x;
+  }
+
+  // ---------- لوحة العرض ومروحة القوارير
+  var FAN = P.filter(function (p) { return p.img; }).slice(0, 40);
+  function fanHTML(items) {
+    var pos = [[-116, 24, -13, 0], [-58, 8, -6, 1.3], [0, 0, 0, 2.6], [58, 8, 6, 3.9], [116, 24, 13, 5.2]];
+    return '<div class="fan">' + items.slice(0, 5).map(function (src, k) {
+      var p = pos[k];
+      return '<figure style="--x:' + p[0] + ';--y:' + p[1] + ';--r:' + p[2] + ';--d:' + p[3] + '"><img src="' + esc(src) + '" alt=""></figure>';
+    }).join('') + '</div>';
+  }
+  function fanImgs() {
+    var imgs = [];
+    st.anchors.forEach(function (pid) { if (SBY[pid].img) imgs.push(SBY[pid].img); });
+    liked().slice(-3).forEach(function (pid) { if (SBY[pid].img) imgs.push(SBY[pid].img); });
+    if (st.cur) st.cur.forEach(function (pid) { if (SBY[pid] && SBY[pid].img) imgs.push(SBY[pid].img); });
+    var seed = (st.gender === 'women' ? 7 : st.gender === 'men' ? 0 : 3) + (st.path === 'discover' ? 11 : 0);
+    for (var k = 0; imgs.length < 5 && k < FAN.length; k++) { var x = FAN[(k * 7 + seed) % FAN.length]; if (imgs.indexOf(x.img) < 0) imgs.push(x.img); }
+    var o = imgs.slice(0, 5); return [o[3], o[1], o[0], o[2], o[4]].filter(Boolean).concat(o).slice(0, 5);
+  }
+  function summaryTags() {
+    var x = [], L = t('L');
+    if (st.gift) x.push(L.gift);
+    st.anchors.forEach(function (pid) { x.push(EN ? '“' + nm(pid) + '”' : '«' + nm(pid) + '»'); });
+    if (st.intent) x.push(L[st.intent]);
+    st.tweaks.forEach(function (k) { x.push(L[k]); });
+    if (st.gender) x.push(L[st.gender]);
+    st.likes.forEach(function (k) { x.push(cl(CARD[k])); });
+    if (st.style) x.push(GIFT_STYLES.filter(function (s) { return s.k === st.style; })[0].l[EN ? 1 : 0]);
+    if (st.occasion) x.push(L[st.occasion]);
+    if (st.budget) x.push(t('bShort')[+st.budget.slice(1) - 1]);
+    return x;
+  }
+  function drawShow(key) {
+    if (!show || window.innerWidth < 980) return;
+    var tt = key === 'start' ? t('pStart') : key === 'results' ? t('pRes') : key === 'swipe' ? t('pSwipe') : t('pDef');
+    var tags = summaryTags(), bars = st.method === 'swipe' ? tasteBars().slice(0, 3) : [], maxb = bars.length ? bars[0][1] : 1;
+    show.innerHTML = '<div class="glow"></div><div class="in"><div class="kick">' + t('pKick') + '</div><h3>' + esc(tt[0]) + '</h3>' +
+      '<div class="lead">' + esc(tt[1]) + '</div>' + fanHTML(fanImgs()) +
+      '<div class="sum">' + (tags.length ? '<b>' + t('pAns') + '</b><div class="tags">' + tags.map(function (x, k) { return '<span style="animation-delay:' + k * 40 + 'ms">' + esc(x) + '</span>'; }).join('') + '</div>' : '') +
+      (bars.length ? '<div class="bars">' + bars.map(function (b) { return '<div class="t"><span>' + esc(b[0]) + '</span><i style="width:' + Math.max(8, Math.round(100 * b[1] / maxb)) + '%"></i></div>'; }).join('') + '</div>' : '') +
+      (!tags.length ? '<b>' + t('pFrom') + '</b><div class="tags"><span>' + t('pStock', num(P.length)) + '</span><span>' + t('pEnc', num(Math.floor(SEARCH_N / 1000) * 1000) + '+') + '</span><span>' + t('pAuth') + '</span></div>' : '') +
+      '</div></div>';
+  }
+
+  // ---------- الشاشات
+  function shell(stepKey, body) {
+    var n = TOTAL[st.path] || 5, done = Math.min(hist.length - st.swipes.length, n);
+    var head = stepKey === 'start' ? '' :
+      '<div class="nav"><button class="back" data-act="back">' + ic('back') + t('back') + '</button>' +
+      (stepKey === 'results' || stepKey === 'loading' ? '' : '<span class="step">' + t('of', Math.max(1, done), n) + '</span>') + '</div>' +
+      '<div class="prog"><i style="width:' + (stepKey === 'results' || stepKey === 'loading' ? 100 : Math.max(6, Math.round(100 * done / (n + 1)))) + '%"></i></div>';
+    app.innerHTML = head + '<section class="q">' + body + '</section>';
+    if (shell.last !== stepKey || stepKey !== 'swipe') window.scrollTo({top: 0, behavior: 'smooth'});
+    shell.last = stepKey;
+  }
+  function tx(k) { return k && T[LANG][k] !== undefined ? tg(k) : (k || ''); }
+  function opts(list, cur, multi, cls) {
+    return '<div class="opts ' + (cls || '') + '">' + list.map(function (o, k) {
+      var on = multi ? cur.indexOf(o[0]) >= 0 : cur === o[0];
+      return '<button class="opt st' + (on ? ' on' : '') + '" style="--i:' + k + '" data-v="' + o[0] + '">' + (o[3] ? '<span class="ic">' + ic(o[3]) + '</span>' : '') +
+        '<span><b>' + esc(tx(o[1])) + '</b>' + (o[2] ? '<small>' + esc(tx(o[2])) + '</small>' : '') + '</span><span class="ck">' + ic('check') + '</span></button>';
+    }).join('') + '</div>';
+  }
+  function cards(sel, cls, hide) {
+    return '<div class="cards">' + CARDS.filter(function (c) { return !hide || hide.indexOf(c.k) < 0; }).map(function (c, k) {
+      return '<button class="card st' + (sel.indexOf(c.k) >= 0 ? ' ' + cls : '') + '" style="--i:' + k + '" data-card="' + c.k + '"><span class="mk">' + ic(cls === 'no' ? 'x' : 'check') + '</span>' +
+        '<span class="ic">' + ic(c.k) + '</span><b>' + cl(c) + '</b><small>' + ch(c) + '</small></button>';
+    }).join('') + '</div>';
+  }
+  function cta(cls, attr, icon, title, sub, i) {
+    return '<button class="cta ' + cls + ' st" style="--i:' + i + '" ' + attr + '><span class="ic">' + ic(icon) + '</span><span><b>' + title + '</b><span>' + sub + '</span></span><span class="go-ar">' + ic('next') + '</span></button>';
+  }
+
+  var R = {
+    start: function () {
+      shell('start', '<div class="hero m-only">' + fanHTML(fanImgs()) + '</div>' +
+        '<span class="kicker st">' + ic('spark') + t('kicker') + '</span>' +
+        '<h1 class="st" style="--i:1">' + t('h1') + '</h1><p class="sub st" style="--i:2">' + t('lead') + '</p>' +
+        cta('main', 'data-path="known"', 'bottle', t('c1'), t('c1s'), 3) +
+        cta('', 'data-path="discover"', 'compass', t('c2'), t('c2s'), 4) +
+        cta('gift', 'data-gift="1"', 'gift', t('c3'), t('c3s'), 5));
+    },
+    giftKnows: function () {
+      shell('giftKnows', '<h2>' + t('gk') + '</h2><p class="sub">' + t('gks') + '</p>' + opts([['yes', 'gkY', 'gkYs', 'bottle'], ['no', 'gkN', 'gkNs', 'help']], null));
+    },
+    search: function () {
+      shell('search', '<h2>' + tg('sq') + '</h2><p class="sub">' + t('sqs') + '</p>' +
+        '<div class="sbox">' + ic('search') + '<input id="q" type="search" autocomplete="off" placeholder="' + esc(t('sph')) + '"></div>' +
+        '<div id="hits"></div><div class="chips" id="chips"></div>' +
+        '<button class="go" data-act="next" ' + (st.anchors.length ? '' : 'disabled') + '>' + t('next') + ic('next') + '</button>');
+      drawChips();
+      loadSearch();
+      var q = document.getElementById('q'), tm;
+      q.addEventListener('input', function () { clearTimeout(tm); tm = setTimeout(function () { drawHits(q.value); }, 120); });
+      if (!st.anchors.length && window.innerWidth >= 980) q.focus();
+    },
+    intent: function () {
+      var sub = st.anchors.length > 1 ? t('iqs2', nm(st.anchors[0]), nm(st.anchors[1])) : t('iqs', nm(st.anchors[0]));
+      shell('intent', '<h2>' + tg('iq') + '</h2><p class="sub">' + esc(sub) + '</p>' +
+        opts([['close', 'iClose', 'iCloseS', 'target'], ['tweak', 'iTweak', 'iTweakS', 'sliders'], ['different', 'iDiff', 'iDiffS', 'compass'], ['nosuit', 'iNo', 'iNoS', 'ban']], st.intent));
+    },
+    tweak: function () {
+      shell('tweak', '<h2>' + t('tq') + '</h2><p class="sub">' + t('tqs') + '</p>' +
+        opts([['less_sweet', 'tSweet', '', 'dropm'], ['calmer', 'tCalm', 'tCalmS', 'drop'], ['longer', 'tLong', 'tLongS', 'clock'], ['fresher', 'tFresh', '', 'leaf'], ['warmer', 'tWarm', '', 'flame']], st.tweaks, true, 'two') +
+        '<button class="go" data-act="next" ' + (st.tweaks.length ? '' : 'disabled') + '>' + t('next') + ic('next') + '</button>');
+    },
+    why: function () {
+      shell('why', '<h2>' + tg('wq') + '</h2><p class="sub">' + t('wqs') + '</p>' +
+        opts([['sweet', 'wSweet', '', 'sweet'], ['strong', 'wStrong', '', 'wave'], ['weak', 'wWeak', '', 'clock'], ['heavy', 'wHeavy', '', 'weight'], ['unknown', 'wUnk', 'wUnkS', 'help']], st.why));
+    },
+    gender: function () {
+      shell('gender', '<h2>' + tg('gq') + '</h2><p class="sub">' + t('gqs') + '</p>' +
+        opts(st.gift ? [['men', 'gMen', '', 'man'], ['women', 'gWomen', '', 'woman']] : [['men', 'gMen', '', 'man'], ['women', 'gWomen', '', 'woman'], ['any', 'gAny', 'gAnyS', 'both']], st.gender));
+    },
+    method: function () {
+      shell('method', '<h2>' + t('mq') + '</h2><p class="sub">' + t('mqs') + '</p>' +
+        cta('main', 'data-v="swipe"', 'swap', t('mSw'), t('mSwS'), 0) + cta('', 'data-v="cards"', 'flower', t('mCards'), t('mCardsS'), 1));
+    },
+    swipe: function () { drawSwipe(); },
+    likes: function () {
+      shell('likes', '<h2>' + t('lq') + '</h2><p class="sub">' + t('lqs') + '</p>' + cards(st.likes, 'on') +
+        '<button class="go" data-act="next" ' + (st.likes.length ? '' : 'disabled') + '>' + t('next') + ic('next') + '</button>');
+    },
+    dislikes: function () {
+      shell('dislikes', '<h2>' + t('dq') + '</h2><p class="sub">' + t('dqs') + '</p>' +
+        cards(st._dis || [], 'no', st.likes) + '<button class="go" data-act="next">' + t('next') + ic('next') + '</button><button class="skip" data-act="nodis">' + t('dSkip') + '</button>');
+    },
+    style: function () {
+      shell('style', '<h2>' + t('yq') + '</h2><p class="sub">' + t('yqs') + '</p>' + opts(GIFT_STYLES.map(function (s) { return [s.k, s.l[EN ? 1 : 0], s.h[EN ? 1 : 0], s.i]; }), st.style, false, 'two'));
+    },
+    occasion: function () {
+      shell('occasion', '<h2>' + tg('oq') + '</h2><p class="sub">' + t('oqs') + '</p>' +
+        opts([['office', 'oOffice', 'oOfficeS', 'brief'], ['daily', 'oDaily', 'oDailyS', 'sun'], ['evening', 'oEve', 'oEveS', 'moon'], ['mixed', 'oMix', 'oMixS', 'shuffle']], st.occasion, false, 'two'));
+    },
+    budget: function () {
+      shell('budget', '<h2>' + tg('bq') + '</h2><p class="sub">' + t('bqs') + '</p>' + opts(BUDGETS.map(function (b) { return [b.k, b.k, '', b.i]; }), st.budget, false, 'two'));
+    },
+    tie: function () {
+      var q = st.tieQ;
+      shell('tie', '<h2>' + tg(q.q) + '</h2><p class="sub">' + t('xq') + '</p>' + opts(q.o.concat([['any', 'any', '', 'shuffle']]), null));
+    },
+    results: function () {
+      if (!st.cur) {
+        shell('loading', '<div class="loading"><div class="rings"><i></i><i></i><i></i>' + ic('bottle') + '</div><p>' + t('ld') + '</p><small>' + t('lds', num(P.length)) + '</small></div>');
+        Promise.all([ensure(st.anchors.concat(liked())), new Promise(function (r) { setTimeout(r, 1100); })])
+          .then(function () { if (nextStep.cur === 'results' && !st.cur) drawResults(); });
+        return;
+      }
+      drawResults();
+    }
+  };
+
+  // ---------- البحث
+  var STOP = {'عطر': 1, 'او': 1, 'دو': 1, 'eau': 1, 'de': 1};
+  function drawHits(q) {
+    var box = document.getElementById('hits'); if (!box) return;
+    var toks = nz(q).split(' ').filter(function (x) { return x && !STOP[x]; });
+    if (!toks.length) { box.innerHTML = ''; return; }
+    var found = [];
+    for (var i = 0; i < S.length; i++) {
+      var x = S[i], ok = true;
+      for (var j = 0; j < toks.length; j++) if (x.blob.indexOf(toks[j]) < 0) { ok = false; break; }
+      if (ok) found.push(x);
+    }
+    var q0 = toks.join(' ');
+    found.sort(function (a, b) {
+      var sa = (nz(a.en).indexOf(q0) === 0 || nz(short(a.ar)).indexOf(q0) >= 0 ? 1e7 : 0) + a.votes;
+      var sb = (nz(b.en).indexOf(q0) === 0 || nz(short(b.ar)).indexOf(q0) >= 0 ? 1e7 : 0) + b.votes;
+      return sb - sa;
+    });
+    box.innerHTML = found.length ? '<div class="res">' + found.slice(0, 8).map(function (x) {
+      var title = EN ? x.ben + ' ' + x.en : x.ar, sub = EN ? (x.year || '') : x.ben + ' · ' + x.en + (x.year ? ' · ' + x.year : '');
+      return '<button class="hit" data-pid="' + x.pid + '">' + (x.img ? '<img src="' + esc(x.img) + '" alt="" loading="lazy">' : '<span class="ph">' + ic('bottle') + '</span>') + '<span><b>' + esc(title) +
+        (x.pool >= 0 ? '<span class="badge">' + t('instock') + '</span>' : '') + '</b><small>' + esc(sub) + '</small></span></button>';
+    }).join('') + '</div>' : '<div class="res"><div class="empty">' + t('empty') + '</div></div>';
+  }
+  function drawChips() {
+    var c = document.getElementById('chips'); if (!c) return;
+    c.innerHTML = st.anchors.map(function (pid) { return '<span class="chip">' + esc(nm(pid)) + '<button data-rm="' + pid + '" aria-label="' + t('rm') + '">' + ic('x') + '</button></span>'; }).join('');
+    var g = document.querySelector('[data-act="next"]'); if (g) g.disabled = !st.anchors.length;
+    drawShow('search');
+  }
+
+  // ---------- النتائج
+  function currentPicks() {
+    var all = scoreAll(), exclude = {}, list = all;
+    st.shown.concat(st.nope).forEach(function (pid) { exclude[pid] = 1; });
+    if (st.mode === 'different2' && st.shown.length) {
+      var shownTop = {}; st.shown.forEach(function (pid) { var f = fp(pid); if (f) shownTop[topAccords(f, 1)[0]] = 1; });
+      list = all.filter(function (x) { return !shownTop[topAccords(x.f, 1)[0]]; });
+    }
+    if (st.cur) {
+      var keep = {}; st.cur.forEach(function (pid) { if (!exclude[pid]) keep[pid] = 1; });
+      list = list.filter(function (x) { return keep[x.p.pid]; }).concat(list.filter(function (x) { return !keep[x.p.pid]; }));
+      var pick = diverse(list, 3, exclude);
+      var fresh = pick.filter(function (x) { return !keep[x.p.pid]; });
+      var slots = st.cur.map(function (pid) { return pick.filter(function (x) { return x.p.pid === pid; })[0] || fresh.shift(); }).filter(Boolean);
+      return slots.concat(fresh);
+    }
+    return diverse(list, 3, exclude);
+  }
+  function note(icon, html, ok) { return '<div class="note' + (ok ? ' ok' : '') + '">' + ic(icon) + '<span>' + html + '</span></div>'; }
+  function vlink(url, txt, noRef) { return '<a href="' + esc(lurl(url)) + (noRef ? '' : '?ref=quiz') + '" target="_blank">' + esc(txt) + '</a>'; }
+  function drawResults() {
+    var pick = currentPicks(), prev = st.cur || [];
+    st.cur = pick.map(function (x) { return x.p.pid; });
+    var title = st.mode === 'rare' ? t('rRare') : st.mode === 'different2' ? t('rDiff') : tg('rBest');
+    var html = '<div class="rhead"><h2>' + title + '</h2><div class="tags">' + summaryTags().map(function (x) { return '<span>' + esc(x) + '</span>'; }).join('') + '</div></div>';
+    if (st.path === 'known') st.anchors.forEach(function (pid) {
+      var a = SBY[pid];
+      if (a.pool >= 0 && st.intent === 'close') { var p = P[a.pool]; html += note('check', esc(t('nSame', nm(pid), money(p.price))) + ' ' + vlink(p.url, t('view')), true); }
+      if (st.intent === 'close') {
+        var a0 = nz(a.en).split(' ')[0];
+        var sib = P.filter(function (p) { var s = SBY[p.pid]; return p.pid !== pid && s.ben === a.ben && nz(s.en).split(' ')[0] === a0; }).slice(0, 3);
+        if (sib.length) html += note('info', esc(t('nSib')) + sib.map(function (p) { return vlink(p.url, nm(p.pid)); }).join(t('sep')));
+      }
+      if (a.pool < 0 && st.intent === 'close' && a.url) html += note('info', esc(t('nOos', nm(pid), '§')).replace('§', vlink(a.url, t('nOosL'), true)));
+    });
+    if (st.path === 'known' && (st.intent === 'close' || st.intent === 'tweak') && pick.length && pick[0].cos < 0.55) {
+      var wide = diverse(scoreAll({ignoreBudget: true}), 1)[0];
+      html += note('info', esc(t('nWeak') + (wide && wide.cos > pick[0].cos + 0.08 ? t('nWeak2', nm(wide.p.pid), money(wide.p.price)) : '')));
+    }
+    if (!pick.length) html += note('info', esc(t('nNone')));
+    html += '<div class="grid">' + pick.map(function (x, k) {
+      var p = x.p, rs = reasons(x), isNew = prev.length && prev.indexOf(p.pid) < 0, top = k === 0 && st.mode === 'best';
+      return '<article class="pc' + (top ? ' top' : '') + '" style="--i:' + (prev.length ? (isNew ? 0 : -9) : k) + '">' +
+        '<div class="img">' + (top ? '<span class="rib">' + ic('spark') + t('rib') + '</span>' : '') + '<img src="' + esc(p.img) + '" alt=""></div>' +
+        '<div class="bd"><div class="br">' + esc(br(p)) + '</div><h3>' + esc(nm(p.pid)) + '</h3>' +
+        '<div class="price">' + esc(t('from', money(p.price))) + (p.reg > p.price ? '<s>' + money(p.reg) + '</s>' : '') + '</div>' +
+        '<ul class="why">' + rs.map(function (r) { return '<li>' + ic('check') + '<span>' + esc(r) + '</span></li>'; }).join('') + '</ul>' +
+        '<div class="acc">' + topAccords(x.f, 3).map(function (a) { return '<span>' + esc(a) + '</span>'; }).join('') + '</div>' +
+        '<div class="act"><a class="btn" href="' + esc(lurl(p.url)) + '?ref=quiz" target="_blank" data-open="' + p.pid + '">' + t('view') + '</a>' +
+        '<button class="nope" data-nope="' + p.pid + '" title="' + esc(t('nopeT')) + '">' + ic('refresh') + t('nope') + '</button></div></div></article>';
+    }).join('') + '</div>';
+    html += '<div class="more"><button data-mode="different2">' + ic('compass') + t('mDiff') + '</button><button data-mode="rare">' + ic('spark') + t('mRare') + '</button>' +
+      '<button data-act="back">' + ic('sliders') + t('mEdit') + '</button><button data-act="restart">' + ic('refresh') + t('mRestart') + '</button></div>';
+    if (st.gift) {
+      var gr = genderRange(), bud = BUDGETS.filter(function (b) { return b.k === st.budget; })[0];
+      var sets = D.sets.filter(function (s) { return s[2] <= bud.max && (s[5] == null || (s[5] >= gr[0] && s[5] <= gr[1])); }).slice(-2);
+      if (sets.length) html += '<div class="sets"><h4>' + t('sets') + '</h4><div class="grid">' + sets.map(function (s, k) {
+        var sn = EN && s[6] ? s[6] + ' Gift Set' : short(s[0]), sb = EN && s[7] ? s[7] : s[1];
+        return '<article class="pc" style="--i:' + (k + 3) + '"><div class="img"><img src="' + esc(full(s[4], D.img0)) + '" alt=""></div><div class="bd"><div class="br">' + esc(sb) + '</div><h3>' + esc(sn) + '</h3><div class="price">' + money(s[2]) + '</div>' +
+          '<div class="act" style="margin-top:14px"><a class="btn" href="' + esc(lurl(full(s[3], D.url0))) + '?ref=quiz" target="_blank">' + t('viewSet') + '</a></div></div></article>';
+      }).join('') + '</div></div>';
+    }
+    var prof = profile();
+    if (prof && !st.gift) html += '<div class="share"><b>' + t('prof') + '</b><p>' + esc(prof) + '</p><a target="_blank" href="https://wa.me/?text=' +
+      encodeURIComponent(prof + '\n' + t('waT') + ' https://paris-avenues.com/' + (EN ? 'en' : 'ar')) + '">' + ic('wa') + t('wa') + '</a></div>';
+    html += '<p class="foot">' + (PROD ? t('footP') : t('foot', D.built)) + '</p>';
+    if (prev.length && nextStep.cur === 'results' && app.querySelector('.grid')) {
+      var sy = window.scrollY, sec = app.querySelector('section.q');
+      sec.style.animation = 'none'; sec.innerHTML = html; window.scrollTo(0, sy);
+    } else { shell('results', html); setTimeout(burst, 650); }
+    bindTilt();
+    drawShow('results');
+    track('quiz_results', {path: st.path, n: pick.length});
+  }
+  function burst() {
+    var rib = app.querySelector('.pc.top .rib'); if (!rib || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    for (var k = 0; k < 14; k++) {
+      var s = document.createElement('i'), a = Math.random() * Math.PI * 2, d = 30 + Math.random() * 45;
+      s.className = 'spark'; s.style.left = (rib.offsetLeft + rib.offsetWidth / 2) + 'px'; s.style.top = (rib.offsetTop + rib.offsetHeight / 2) + 'px';
+      s.style.setProperty('--dx', Math.cos(a) * d + 'px'); s.style.setProperty('--dy', Math.sin(a) * d + 'px'); s.style.animationDelay = (Math.random() * 120) + 'ms';
+      rib.parentNode.appendChild(s); setTimeout(function (el) { return function () { el.remove(); }; }(s), 1200);
+    }
+  }
+  function bindTilt() {
+    if (!matchMedia('(hover: hover)').matches) return;
+    app.querySelectorAll('.pc').forEach(function (c) {
+      c.addEventListener('mousemove', function (e) {
+        var r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+        c.style.transform = 'perspective(900px) rotateY(' + (x * 6) + 'deg) rotateX(' + (-y * 6) + 'deg) translateY(-4px)';
+      });
+      c.addEventListener('mouseleave', function () { c.style.transform = ''; });
+    });
+  }
+  function profile() {
+    var f = st.path === 'known' ? anchorF() : null, words = [];
+    if (st.path === 'discover' && st.method === 'swipe') words = tasteBars().slice(0, 2).map(function (x) { return x[0]; });
+    else if (st.path === 'discover') words = st.likes.map(function (k) { return cl(CARD[k]); });
+    else if (f) {
+      var tmp = {raw: {}, sum: 0}; st.anchors.forEach(function (pid) { var a = fp(pid); for (var i in a.raw) { tmp.raw[i] = (tmp.raw[i] || 0) + a.raw[i]; tmp.sum += a.raw[i]; } });
+      words = CARDS.map(function (c) { return [cl(c), share(tmp, c.g)]; }).sort(function (a, b) { return b[1] - a[1]; }).slice(0, 2).map(function (x) { return x[0]; });
+    }
+    if (!words.length) return '';
+    var pres = st.tie && st.tie.d === 'sil' ? (st.tie.v === 'low' ? t('pLow') : t('pHigh')) : st.occasion === 'office' ? t('pOffice') : st.occasion === 'evening' ? t('pEve') : '';
+    return t('profT', join(EN ? words.map(function (w) { return w.toLowerCase(); }) : words), pres);
+  }
+
+  // ---------- شاشة السوايب
+  function drawSwipe() {
+    var n = st.swipes.length, likes = liked().length;
+    var enough = (likes >= 3 && n >= 8) || n >= st.swipeCap;
+    var c = enough ? null : nextCard();
+    var bars = tasteBars(), maxb = bars.length ? bars[0][1] : 1;
+    var html = '<h2>' + (c ? t('sh') : likes ? t('sDone') : t('sNone')) + '</h2>';
+    if (c) {
+      var f = fp(c.pid), card = CARD[c.fam];
+      html += '<p class="sub">' + t('shs') + '</p>' +
+        '<div class="deck"><div class="ghost g2"></div><div class="ghost g1"></div><div class="sc" id="sc"><span class="tag yes">' + t('sYes') + '</span><span class="tag no">' + t('sNo') + '</span>' +
+        (c.pool >= 0 ? '<span class="badge stock">' + t('stock2') + '</span>' : '') +
+        '<div class="img"><img src="' + esc(c.img) + '" alt=""></div><div class="bd"><div class="br">' + esc(EN ? c.ben : c.bar) + '</div><h3>' + esc(nm(c.pid)) + '</h3>' +
+        '<div class="fam">' + ic(c.fam) + cl(card) + '</div><div class="acc">' + topAccords(f, 3).map(function (a) { return '<span>' + esc(a) + '</span>'; }).join('') + '</div></div></div></div>' +
+        '<div class="sbtns"><button class="no" data-sw="-1" aria-label="' + esc(t('sHintL')) + '">' + ic('x') + '</button><button class="mid" data-sw="0">' + t('sMid') + '</button><button class="yes" data-sw="1" aria-label="' + esc(t('sHintR')) + '">' + ic('heart') + '</button></div>' +
+        '<div class="shint"><span>' + t('sHintL') + '</span><span>' + t('sHintR') + '</span></div>' +
+        '<div class="count">' + t('of', n + 1, likes >= 3 ? Math.max(8, n + 1) : st.swipeCap) + '</div>';
+    } else if (likes) {
+      html += '<p class="sub">' + t('sDoneS', n) + '</p><button class="go" data-act="swdone">' + t('sCont') + ic('next') + '</button>';
+    } else {
+      html += '<p class="sub">' + t('sNoneS') + '</p><button class="go" data-act="swmore">' + t('sMore') + '</button><button class="skip" data-act="swcards">' + t('sCards') + '</button>';
+    }
+    if (bars.length) html += '<div class="taste"><b>' + t('taste') + '</b>' + bars.slice(0, 3).map(function (b) {
+      return '<div class="t"><span>' + esc(b[0]) + '</span><i style="width:' + Math.max(8, Math.round(100 * b[1] / maxb)) + '%"></i></div>'; }).join('') + '</div>';
+    if (n >= 5 && likes >= 1 && c) html += '<button class="skip" data-act="swdone">' + t('sEnough') + '</button>';
+    shell('swipe', html);
+    if (c) { drawSwipe.cur = c.pid; bindDrag(document.getElementById('sc')); }
+  }
+  function toast(pid) {
+    var s = SBY[pid], old = document.querySelector('.toast'); if (old) old.remove();
+    var el = document.createElement('div'); el.className = 'toast';
+    el.innerHTML = '<img src="' + esc(s.img) + '" alt=""><span><b>' + esc(t('sMatch', nm(pid))) + '</b>' + vlink(s.url, t('view')) + '</span>';
+    document.body.appendChild(el); setTimeout(function () { el.remove(); }, 3300);
+  }
+  function doSwipe(v) {
+    var pid = drawSwipe.cur, el = document.getElementById('sc');
+    if (!pid) return;
+    drawSwipe.cur = null;
+    track('quiz_swipe', {pid: pid, v: v});
+    if (v === 1 && SBY[pid].pool >= 0) toast(pid);
+    if (v === 1) ensure([pid]);
+    function commit() { go(function () { st.swipes.push({pid: pid, v: v}); }); }
+    if (!el) return commit();
+    el.style.setProperty('--glow', v === 1 ? 'rgba(31,138,76,.35)' : v === -1 ? 'rgba(180,45,60,.3)' : 'transparent');
+    el.style.transform = v === 0 ? 'translateY(-120%) scale(.9)' : 'translateX(' + (v === 1 ? 140 : -140) + '%) rotate(' + (v === 1 ? 20 : -20) + 'deg)';
+    el.style.opacity = '0';
+    setTimeout(commit, 260);
+  }
+  function bindDrag(el) {
+    if (!el) return;
+    var x0 = 0, y0 = 0, dx = 0, dy = 0, on = false, yes = el.querySelector('.tag.yes'), no = el.querySelector('.tag.no');
+    el.addEventListener('pointerdown', function (e) { on = true; x0 = e.clientX; y0 = e.clientY; dx = dy = 0; el.classList.add('drag'); el.setPointerCapture(e.pointerId); });
+    el.addEventListener('pointermove', function (e) {
+      if (!on) return; dx = e.clientX - x0; dy = e.clientY - y0;
+      el.style.transform = 'translate(' + dx + 'px,' + Math.min(0, dy) + 'px) rotate(' + dx / 16 + 'deg)';
+      var a = Math.max(0, Math.min(1, dx / 90)), b = Math.max(0, Math.min(1, -dx / 90));
+      yes.style.opacity = a; no.style.opacity = b;
+      el.style.setProperty('--glow', a ? 'rgba(31,138,76,' + a * .35 + ')' : b ? 'rgba(180,45,60,' + b * .3 + ')' : 'transparent');
+    });
+    function end() {
+      if (!on) return; on = false; el.classList.remove('drag');
+      if (dx > 90) return doSwipe(1);
+      if (dx < -90) return doSwipe(-1);
+      if (dy < -110 && Math.abs(dx) < 60) return doSwipe(0);
+      el.style.transform = ''; yes.style.opacity = no.style.opacity = 0; el.style.setProperty('--glow', 'transparent');
+    }
+    el.addEventListener('pointerup', end); el.addEventListener('pointercancel', end);
+  }
+
+  // ---------- الأحداث
+  function ripple(b, e) {
+    var r = b.getBoundingClientRect(), s = document.createElement('span'), d = Math.max(r.width, r.height);
+    s.className = 'ripple'; s.style.width = s.style.height = d + 'px';
+    s.style.left = ((e.clientX || r.left + r.width / 2) - r.left - d / 2) + 'px'; s.style.top = ((e.clientY || r.top + r.height / 2) - r.top - d / 2) + 'px';
+    b.appendChild(s); setTimeout(function () { s.remove(); }, 650);
+  }
+  app.addEventListener('click', function (e) {
+    var b = e.target.closest('button,a'); if (!b) return;
+    var key = nextStep.cur, d = b.dataset;
+    if (b.classList.contains('opt') || b.classList.contains('cta') || b.classList.contains('card')) ripple(b, e);
+    if (d.act === 'back') return back();
+    if (d.act === 'restart') { reset(); return render(); }
+    if (d.path) return go(function () { st.path = d.path; if (d.path === 'discover') st.dislikes = null; });
+    if (d.gift) return go(function () { st.gift = true; });
+    if (d.pid) {
+      var pid = +d.pid; b.disabled = true;
+      ensure([pid]).then(function () {
+        if (!fp(pid)) return;
+        if (st.anchors.indexOf(pid) < 0 && st.anchors.length < 2) st.anchors.push(pid);
+        var q = document.getElementById('q'); if (q) q.value = ''; var hs = document.getElementById('hits'); if (hs) hs.innerHTML = '';
+        drawChips(); track('quiz_anchor', pid);
+      });
+      return;
+    }
+    if (d.rm) { st.anchors = st.anchors.filter(function (x) { return x !== +d.rm; }); return drawChips(); }
+    if (d.nope) {
+      var card = b.closest('.pc'); track('quiz_nope', d.nope);
+      if (card) card.classList.add('out');
+      setTimeout(function () { st.nope.push(+d.nope); drawResults(); }, 280);
+      return;
+    }
+    if (d.open) return track('quiz_open', d.open);
+    if (d.mode) return go(function () { st.shown = st.shown.concat(st.cur || []); st.cur = null; st.mode = d.mode; });
+    if (d.sw != null) return doSwipe(+d.sw);
+    if (d.act === 'swdone') return go(function () { st.swipeDone = true; });
+    if (d.act === 'swmore') return go(function () { st.swipeCap += 6; });
+    if (d.act === 'swcards') return go(function () { st.method = 'cards'; st.swipes = []; });
+    if (d.card) {
+      if (key === 'likes') { toggle(st.likes, d.card, 2); b.classList.toggle('on', st.likes.indexOf(d.card) >= 0); document.querySelector('.go').disabled = !st.likes.length; drawShow(key); return; }
+      st._dis = st._dis || []; toggle(st._dis, d.card, 3); b.classList.toggle('no', st._dis.indexOf(d.card) >= 0); return;
+    }
+    if (d.act === 'nodis') return go(function () { st.dislikes = []; st._dis = []; });
+    if (d.act === 'next') {
+      if (key === 'dislikes') return go(function () { st.dislikes = (st._dis || []).slice(); });
+      return go(function () {});
+    }
+    if (d.v != null) {
+      var v = d.v;
+      if (key === 'tweak') { toggle(st.tweaks, v, 2); b.classList.toggle('on', st.tweaks.indexOf(v) >= 0); document.querySelector('.go').disabled = !st.tweaks.length; return; }
+      if (render.busy) return; render.busy = true;
+      b.classList.add('on');
+      setTimeout(function () {
+        go(function () {
+          if (key === 'giftKnows') { st.giftKnows = v; st.path = v === 'yes' ? 'known' : 'giftUnknown'; }
+          else if (key === 'intent') { st.intent = v; st.tweaks = []; st.why = null; }
+          else if (key === 'why') st.why = v;
+          else if (key === 'gender') st.gender = v;
+          else if (key === 'method') st.method = v;
+          else if (key === 'style') st.style = v;
+          else if (key === 'occasion') st.occasion = v;
+          else if (key === 'budget') { st.budget = v; delete st.tie; delete st.tieQ; }
+          else if (key === 'tie') st.tie = v === 'any' ? null : {d: st.tieQ.d, v: v};
+        });
+      }, 200);
+    }
+  });
+  function toggle(arr, v, max) { var i = arr.indexOf(v); if (i >= 0) arr.splice(i, 1); else { if (arr.length >= max) arr.shift(); arr.push(v); } }
+
+  function render() {
+    var key = nextStep();
+    nextStep.cur = key; render.busy = false;
+    document.body.classList.toggle('is-results', key === 'results');
+    R[key]();
+    if (key !== 'results') drawShow(key);
+  }
+  function applyLang() {
+    EN = LANG === 'en'; setAcc();
+    document.documentElement.lang = LANG; document.documentElement.dir = EN ? 'ltr' : 'rtl';
+    document.title = t('title');
+    document.getElementById('storeTxt').textContent = t('store');
+    document.getElementById('storeLink').href = 'https://paris-avenues.com/' + (EN ? 'en' : 'ar');
+    document.getElementById('lang').innerHTML = ic('globe') + t('langBtn');
+    document.getElementById('proto').textContent = PROD ? '' : t('proto');
+    document.getElementById('trust').innerHTML = ['shield', 'returnI', 'cardI', 'gift'].map(function (icn, k) {
+      var x = t('trust')[k]; return '<div>' + ic(icn) + '<span><b>' + x[0] + '</b><span>' + x[1] + '</span></span></div>'; }).join('');
+    famousCache = {};
+  }
+  document.getElementById('lang').addEventListener('click', function () {
+    LANG = EN ? 'ar' : 'en'; try { localStorage.setItem('pa_quiz_lang', LANG); } catch (e) {}
+    applyLang(); if (nextStep.cur === 'results' && st.cur) drawResults(); else render();
+  });
+  (function () { var bg = document.getElementById('bg'); for (var k = 0; k < 10; k++) { var b = document.createElement('b'); b.style.left = (5 + Math.random() * 90) + '%'; b.style.animationDelay = (-Math.random() * 14) + 's'; b.style.animationDuration = (11 + Math.random() * 8) + 's'; bg.appendChild(b); } })();
+  window.addEventListener('resize', function () { drawShow(nextStep.cur); });
+  applyLang(); reset();
+  var start = qs.get('start');
+  if (start === 'known' || start === 'discover') { hist.push(JSON.stringify(st)); st.path = start; if (start === 'discover') st.dislikes = null; }
+  else if (start === 'gift') { hist.push(JSON.stringify(st)); st.gift = true; }
+  render();
+  setTimeout(loadSearch, 2500);
+})();
+</script>
+</body></html>
